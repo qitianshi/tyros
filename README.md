@@ -11,6 +11,12 @@ What we've covered so far:
 * [**Lesson 0**](https://github.com/qitianshi/tyros-resources/tree/main/Lesson%200): setting up Replit
 * [**Lesson 1**](https://github.com/qitianshi/tyros-resources/tree/main/Lesson%201): the `print` statement, comments, and variables
 
+In future lessons, we'll cover:
+* **Lesson 3**: operators
+* **Lesson 4**: the `if`/`else` statements
+* **Lesson 5**: `for` loops
+* **Lesson 6**: `while` loops
+
 ## Legal stuff
 © 2022 Qi Tianshi.
 
