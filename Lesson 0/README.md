@@ -43,3 +43,6 @@ Remember, what you're learning is *Python*; Replit is just a website that we use
 All your Repls are saved. In the sidebar, click "My Repls" to see all your past files. They might be in the folder called "Unnamed Repls" if you didn't change the default name when creating a new Repl.
 
 <img width="1552" alt="image" src="https://user-images.githubusercontent.com/65122416/162572935-88022634-a676-4392-a16d-a7ae6d8941d2.png">
+
+---
+© 2022 Qi Tianshi. This file is licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International license (CC BY-NC-SA 4.0) license](https://creativecommons.org/licenses/by-nc-sa/4.0/).
