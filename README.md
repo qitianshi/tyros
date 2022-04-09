@@ -13,6 +13,6 @@ What we've covered so far:
 ## Legal stuff
 © 2022 Qi Tianshi.
 
-Notes (`.md`, `.txt`, etc files) is licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International license (CC BY-NC-SA 4.0) license](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+Notes (`.md`, `.txt`, etc files) are licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International license (CC BY-NC-SA 4.0) license](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
 Runnable code (`.py` files) is licensed under [GNU GPLv3](https://github.com/qitianshi/tyros-resources/blob/main/LICENSE).
