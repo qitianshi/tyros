@@ -1,4 +1,4 @@
-# Lesson 1 — setting up Replit
+# Lesson 0 — setting up Replit
 
 We'll use [replit.com](https://replit.com) to run our code. Replit is a free online compiler that works with hundreds of languages, including the one we're using, Python!
 
@@ -36,6 +36,8 @@ print("Hello, world!")
 If you see `Hello, world!` in the console, hooray! You just wrote your first Python program.
 
 Over the next few lessons, we'll dive into the magical world of programming! Replit will become your friend.
+
+Remember, what you're learning is *Python*; Replit is just a website that we use to run our Python files. There are thousands of ways to run Python, but this is one of the simplest. No matter what you're using to run Python, the code itself never changes. We could be speaking English in Singapore, the US, or China, but we'll still be speaking English!
 
 ## Seeing your old Repls
 All your Repls are saved. In the sidebar, click "My Repls" to see all your past files. They might be in the folder called "Unnamed Repls" if you didn't change the default name when creating a new Repl.
