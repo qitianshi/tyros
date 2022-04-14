@@ -38,13 +38,13 @@ Variables store values. You can imagine them like labelled boxes that contain di
 In this example, we created a variable called "myVar" and gave it the value of "Hello".
 
 ```Python
-myVar = "Hello"
+greeting = "Hello"
 ```
 
 We can use the names of variables to refer to the value they contain.
 
 ```Python
-print(myVar)
+print(greeting)
 ```
 
 ```
@@ -53,7 +53,7 @@ print(myVar)
 
 Variables can have any name you like, as long as they only contain letters, numbers, and underscores, and they can't begin with numbers. `var`, `firstVar`, `my_fav_variable`, `VARIABLE`, and `value1` are allowed, but `1number` and `my-var` aren't.
 
-### Types
+### Data types
 Data comes in different types. The four main ones are *strings*, *integers*, *floats*, and *bools*.
 
 Strings are for text, like letters, words, punctuation, and even sentences. All strings have quotation marks `"` around them.
