@@ -84,25 +84,27 @@ boolType = True
 We can use math operators like `+-*/` to manipulate variables and data.
 
 ```Python
-firstVar = 20
-secondVar = 3
-print(firstVar - secondVar)
+thisYear = 2022
+birthYear = 1990
+myAge = thisYear - birthYear                # Doing math with variables
+print("This year I am", myAge, "years old!")
 ```
 
 ```
-> 17
+> This year I am 32 years old!
 ```
 
 We can also use the `+` operator to join strings.
 
 ```Python
-someWord = "Hello"
-anotherWord = " World!"
-print(someWord + anotherWord)
+firstName = "Puja"
+lastName = "Soni"
+fullName = firstName + " " + lastName       # Using + to join strings
+print("My full name is", fullName)
 ```
 
 ```
-> Hello World!
+> My full name is Puja Soni
 ```
 
 We'll learn more about operators next week!
@@ -111,16 +113,16 @@ We'll learn more about operators next week!
 Variables can be modified! We can assign them new values, and they'll forget their old values.
 
 ```Python
-myVar = "Hello"
-print(myVar)
+gst = 7
+print("The GST is", gst)
 
-myVar = 50
-print(myVar)
+gst = 9
+print("The GST has changed to", gst)
 ```
 
 ```
-> Hello
-> 50
+> The GST is 7
+> The GST has changed to 9
 ```
 
 ## Thinking time!
