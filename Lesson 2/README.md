@@ -1,13 +1,13 @@
 # Lesson 2 — Operators
 
 ## Introduction
-In the previous lesson, we learnt about the basic building blocks of programs - variables. While they can be useful on their own, we need them to interact with each other in most cases. It is like getting from one place to another - you need a path! Operators serve as this "path" for us to manipulate variables. As they say, "the whole is greater than the sum of the parts".
+In the previous lesson, we learnt about the basic building blocks of programs — variables. While they can be useful on their own, we need them to interact with each other in most cases. It is like getting from one place to another — you need a path! Operators serve as this "path" for us to manipulate variables. As they say, "the whole is greater than the sum of the parts".
 
 ## Mathematical operators
-Mathematical operators are exactly what they sound like - math. There are your basic _`+` (addition)_, _`-` (subtraction)_, _`*` (multiplication)_ and _`/` (division)_ operators, and there are a few more less commonly seen ones as well.
+Mathematical operators are exactly what they sound like — math. There are your basic _`+` (addition)_, _`-` (subtraction)_, _`*` (multiplication)_ and _`/` (division)_ operators, and there are a few more less commonly seen ones as well.
 
 #### `%` (modulus) and `//` (integer division)
-We use `%` to find the remainder of a division problem, while we use `//` to find the quotient. 
+We use `%` to find the remainder of a division problem, while we use `//` to find the quotient.
 
 For example, we have a microwave that displays the time left to heat up food only in seconds, and we want to change it to display the time in both minutes and seconds.
 
@@ -22,7 +22,7 @@ print("Time remaining:", min, "minutes and", sec, "seconds.")
 > Time remaining: 6 minutes and 40 seconds.
 ```
 
-#### `**` (exponentiation)  
+#### `**` (exponentiation)
 We use `**` when we want to multiply the same number by itself multiple times. For instance, we want to multiply 2 by itself 3 times. If we use the multiplication operator (`*`), we can write...
 
 ```Python
@@ -204,3 +204,7 @@ else:
 
 ## Conclusion
 In this lesson, you learnt about operators, specifically mathematical, comparison, and logical operators. Do make good use of them!
+
+---
+
+© 2022 Tew En Hao and Qi Tianshi. This file is licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International license (CC BY-NC-SA 4.0) license](https://creativecommons.org/licenses/by-nc-sa/4.0/).
