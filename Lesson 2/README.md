@@ -110,14 +110,14 @@ Comparison operators are used to compare two values. They give us either `True` 
 
 Python comparison operators are just like math! Here's a handy table to help you remember:
 
-| Math | Python | Description | Example |
-| ---- | ------ | ----------- | ------- |
-| =    | `==`   | equal to    | `1 + 2 == 3` |
-| ≠    | `!=`   | not equal to | `2 - 1 != 5` |
-| >    | `>`    | greater than | `5 > 2` |
+| Math | Python | Description              | Example           |
+| ---- | ------ | ------------------------ | ----------------- |
+| =    | `==`   | equal to                 | `1 + 2 == 3`      |
+| ≠    | `!=`   | not equal to             | `2 - 1 != 5`      |
+| >    | `>`    | greater than             | `5 > 2`           |
 | ≥    | `>=`   | greater than or equal to | `5 > 2`, `3 >= 3` |
-| <    | `<`    | less than | `1 < 3` |
-| ≤    | `<=`   | less than or equal to | `1 < 3`, `3 <= 3` |
+| <    | `<`    | less than                | `1 < 3`           |
+| ≤    | `<=`   | less than or equal to    | `1 < 3`, `3 <= 3` |
 
 Printing the result of a comparison will only give us one of two possible values, `True` or `False`.
 
@@ -162,11 +162,11 @@ There are three main logical operators:
 ### `or`
 The `or` operator tests two boolean values. If _either_ of the tests are `True`, then the result of `or` is `True`. Only if _both_ of the tests return a result of `False` will `or` give a result of `False`.
 
-| Expression | Result |
-| ---------- | ------ |
-| `True or True` | `True` |
-| `True or False` | `True` |
-| `False or True` | `True` |
+| Expression       | Result  |
+| ---------------- | ------- |
+| `True or True`   | `True`  |
+| `True or False`  | `True`  |
+| `False or True`  | `True`  |
 | `False or False` | `False` |
 
 I like shopping online! If I need new shoes, I'll go and buy a pair online. But if I see a discount, I'll still buy a pair even if I don't need them. In other words, if I need new shoes, _or_ they're on discount, I'll buy them.
@@ -188,11 +188,11 @@ print("Will I buy new shoes?", will_buy_shoes)
 ### `and`
 If _both_ the tests are `True`, then `and` gives `True`. However, if _either_ of the tests are `False`, then `and` gives a result of `False`.
 
-| Expression | Result |
-| ---------- | ------ |
-| `True and True` | `True` |
-| `True and False` | `False` |
-| `False and True` | `False` |
+| Expression        | Result  |
+| ----------------- | ------- |
+| `True and True`   | `True`  |
+| `True and False`  | `False` |
+| `False and True`  | `False` |
 | `False and False` | `False` |
 
 My parents have scolded me for my online shopping habits 🙁. Now, they say I can only buy new shoes if I need them _and_ they're also on discount! Let's change our previous Python program a little bit.
@@ -212,10 +212,10 @@ print("Will I buy new shoes?", will_buy_shoes)
 ### `not`
 Unlike `and` and `or`, `not` acts only on a single boolean value. It simply inverses it — `True` becomes `False`, and `False` becomes `True`.
 
-| Expression | Result |
-| ---------- | ------ |
-| `not True` | `False` |
-| `not False` | `True` |
+| Expression  | Result  |
+| ----------- | ------- |
+| `not True`  | `False` |
+| `not False` | `True`  |
 
 My parents have softened up a bit. Now they say that if I didn't buy any shoes, I can go and buy a jacket!
 
@@ -312,6 +312,8 @@ Python has many other operators besides the ones we've covered: assignment, iden
 
 * [More Python operators](https://www.w3schools.com/python/python_operators.asp)
 * [Xor (exclusive or)](https://en.wikipedia.org/wiki/Exclusive_or)
+* [Logic gate](https://en.wikipedia.org/wiki/Logic_gate)
+* [Modulo](https://en.wikipedia.org/wiki/Modulo_(mathematics))
 
 ---
 
