@@ -149,6 +149,8 @@ print("One" != "Two")
 > True
 ```
 
+**Important**: The comparison operator `==` and the assignment operator `=` are not the same. Can you explain their differences?
+
 ## Logical Operators
 Logical operators help us evaluate combinations of boolean (`True` or `False`) values.
 
