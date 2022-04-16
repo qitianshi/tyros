@@ -1,4 +1,4 @@
-# Lesson 1 — the `print` statement, comments, and variables
+# Lesson 1 — input/output, comments, and variables
 
 ## An introduction
 Computer science is about using computers to solve problems.
@@ -142,6 +142,14 @@ print("Next year I'll be", age)
 > Next year I'll be 13
 ```
 
+## `input()`
+We can use the `input()` function to get input from the console.
+
+```Python
+name = input("What's your name? ")
+print("Hello", name)
+```
+
 ## Thinking time!
 What happens if you try to run this code?
 
@@ -183,7 +191,7 @@ print(var)
 It just prints `Hi!`. When a new value is assigned, the variable forgets its old value.
 
 ## Conclusion
-In this lesson you learned about how to get output from your Python code using the `print` statement, how to write notes in your code with comments, and how to create, modify, and print variables.
+In this lesson you learned about how to get output from your Python code using the `print` function, how to get input from the console using the `input` function, how to write notes in your code with comments, and how to create, modify, and print variables.
 
 In the next lesson, you'll learn more about what we can do with these simple tools!
 
