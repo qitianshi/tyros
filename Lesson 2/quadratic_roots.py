@@ -1,5 +1,5 @@
 # Lesson 2 - Operators
-# Solution to Practise Question 2
+# Solution to Practise Question 3
 
 # Copyright 2022 Qi Tianshi and Tyros members. Licensed under GNU GPLv3.
 
@@ -15,11 +15,13 @@
 # We'll put the solution here in a while. Try it yourself first!
 
 
-a = int(input("a: "))
-b = int(input("b: "))
-c = int(input("c: "))
+a = float(input("a: "))
+b = float(input("b: "))
+c = float(input("c: "))
 
-root1 = (-b + (b**2-(4*a*c))**0.5)/(2*a) 
+# This part uses the quadratic formula: https://en.wikipedia.org/wiki/Quadratic_formula
+# For the square root, recall that √x = x^0.5
+root1 = (-b + (b**2-(4*a*c))**0.5)/(2*a)
 root2 = (-b - (b**2-(4*a*c))**0.5)/(2*a)
 
-print(f"{root1}\n{root2}")
+print("The roots are", root1, "and", root2)
