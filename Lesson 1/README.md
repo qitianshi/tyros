@@ -15,6 +15,8 @@ Now that you've written your instructions in Python, your computer will perform 
 
 If the instructions are wrong or their order is messed up, you wouldn't get a delicious cake! Writing programs is like writing a recipe. You must write exactly the correct instructions, and in the right order, to make your computer do what you want.
 
+To make sure Python understands what we're telling it to do, we must follow correct syntax. Syntax is like the grammar of programming languages — it defines a set of rules we must follow when we write our code.
+
 ## `print()`
 We can use `print()` to output something.
 
@@ -184,6 +186,19 @@ It just prints `Hi!`. When a new value is assigned, the variable forgets its old
 In this lesson you learned about how to get output from your Python code using the `print` statement, how to write notes in your code with comments, and how to create, modify, and print variables.
 
 In the next lesson, you'll learn more about what we can do with these simple tools!
+
+### Further reading
+We've only covered the basics in this lesson. If you're keen to learn more, we've compiled a list of in-depth resources you can use to further your understanding.
+
+* [Computer science](https://undergrad.cs.umd.edu/what-computer-science)
+* [Python](https://www.w3schools.com/python/python_intro.asp)
+* [Basic Python syntax](https://www.w3schools.com/python/python_syntax.asp)
+* [Comments](https://www.w3schools.com/python/python_comments.asp)
+* [Variables](https://www.w3schools.com/python/python_variables.asp)
+* [Data types](https://www.w3schools.com/python/python_datatypes.asp)
+* [Numbers in Python](https://www.w3schools.com/python/python_numbers.asp)
+* [Strings in Python](https://www.w3schools.com/python/python_strings.asp)
+* [Booleans in Python](https://www.w3schools.com/python/python_booleans.asp)
 
 ---
 © 2022 Qi Tianshi. This file is licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International license (CC BY-NC-SA 4.0) license](https://creativecommons.org/licenses/by-nc-sa/4.0/).
