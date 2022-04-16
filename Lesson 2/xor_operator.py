@@ -22,4 +22,7 @@
 # in the table above.
 
 
-# We'll put the solution here in a while. Try it yourself first!
+a = True
+b = False
+
+print((a and not b) or (not a and b))
