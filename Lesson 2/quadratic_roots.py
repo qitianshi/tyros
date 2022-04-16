@@ -13,3 +13,13 @@
 
 
 # We'll put the solution here in a while. Try it yourself first!
+
+
+a = int(input("a: "))
+b = int(input("b: "))
+c = int(input("c: "))
+
+root1 = (-b + (b**2-(4*a*c))**0.5)/(2*a) 
+root2 = (-b - (b**2-(4*a*c))**0.5)/(2*a)
+
+print(f"{root1}\n{root2}")
