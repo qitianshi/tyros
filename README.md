@@ -10,9 +10,9 @@ Here you'll find resources from all past Python lessons. Above this file you'll 
 What we've covered so far:
 * [**Lesson 0**](https://github.com/qitianshi/tyros-resources/tree/main/Lesson%200): setting up Replit
 * [**Lesson 1**](https://github.com/qitianshi/tyros-resources/tree/main/Lesson%201): input/output, comments, and variables
+* [**Lesson 2**](https://github.com/qitianshi/tyros-resources/tree/main/Lesson%202): operators
 
 In future lessons, we'll cover:
-* **Lesson 2**: operators
 * **Lesson 3**: `if`/`else`
 * **Lesson 4**: `for` loops
 * **Lesson 5**: `while` loops
