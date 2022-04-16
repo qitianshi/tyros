@@ -264,6 +264,36 @@ print("Should I buy the meal?", should_buy_meal)
 > Should I buy the meal? False
 ```
 
+## Let's practise
+Write a program that takes in a temperature in fahrenheit, converts it to celsius, then prints the result. (Hint: you'll need to search for the conversion formula.)
+
+---
+
+You're the inventory manager for a warehouse that supplies soft drinks. You have a fixed number of cases of drinks in your stock. Each case costs $15. To cover delivery costs, the minimum order amount must be at least $100.
+
+Write a program that helps you evaluate new orders. Your program should take in the number of cases ordered, then decide if you should accept the order using the conditions above. Print out: whether you're accepting the order, the amount of money you should receive, and how much stock you'll have left after fulfilling the order.
+
+---
+
+A quadratic equation may be expressed in terms of `ax² + bx + c = 0`, where `a` is a non-zero constant, and `b` and `c` are constants.
+
+Write a program that takes in the values of `a`, `b`, and `c`, and prints the two roots of the equation, assuming that the roots are real. (Hint: do you remember lower sec math?)
+
+---
+
+`xor` is another useful logical operator that gives `True` only if exactly one of the two boolean values are `True`, but not both.
+
+| Expression | Result |
+| ---------- | ------ |
+| `True xor True` | `False` |
+| `True xor False` | `True` |
+| `False xor True` | `True` |
+| `False xor False` | `False` |
+
+Unfortunately, Python doesn't have a built-in `xor` operator, so you can't simply type `True xor False` in Python.
+
+Write some code using the other logic operators (`and`, `or`, `not`) to get the same result as `xor` would give you. Test your code using the 4 examples in the table above.
+
 ## Conclusion
 Operators let us manipulate data and variables. There are three types of operators: mathematical, comparison, and logical.
 
