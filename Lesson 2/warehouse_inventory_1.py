@@ -15,11 +15,11 @@
 # after fulfilling the order.
 
 
-# We'll put the solution here in a while. Try it yourself first!
-
 stock = 100
-cases = int(input("Enter the number of cases: "))
+orders = int(input("Enter the number of cases: "))          # You need to use int() to convert the string input to an integer.
 
-print("Am I accepting the order?", cases * 15 >= 100 and cases <= stock)
-print("Amount of money I should receive:", cases * 15)
-print("How much stock I'll have left after fulfilling the order:", stock - cases)
+price = orders * 15
+
+print("Am I accepting the order?", price >= 100 and orders <= stock)
+print("Amount of money I should receive:", price)
+print("How much stock I'll have left after fulfilling the order:", stock - orders)
