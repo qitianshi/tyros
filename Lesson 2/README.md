@@ -11,16 +11,16 @@ Python has three categories of operators: mathematical, comparison, and logic. L
 Mathematical operators are exactly what they sound like — math. Here are the ones we'll be looking at:
 
 * `+`, `-`, `*`, `/`: addition, subtraction, multiplication, and division. You're already familiar with these.
-* `//`: integer division, a special type of division that always gives you integers.
+* `//`: floor division, a special type of division that always gives you integers.
 * `%`: modulo, which gives you the remainder after dividing.
 * `**`: exponentiate, which lets you calculate powers.
 
 We'll first understand what the three new operators (`//`, `%`, and `**`) do, then we'll look at some examples of how we can use them.
 
-### `//` (integer division)
+### `//` (floor division)
 Let's try to evaluate `25 / 10`. The standard division operator, `/`, will give us a floating-point number (non-whole number): `2.5`. [(If you need a recap of data types...)](https://github.com/qitianshi/tyros-resources/tree/main/Lesson%201#data-types)
 
-Sometimes, we want an integer result instead. This is where the integer division, `//`, operator comes in.
+Sometimes, we want an integer result instead. This is where the floor division, `//`, operator comes in.
 
 ```Python
 print(25 // 10)
