@@ -35,7 +35,7 @@ print("Hello, world!")       # This is also a comment.
 ## Variables
 Variables store values. You can imagine them like labelled boxes that contain different objects. The object inside the box is the value of the variable. The label on the box is the name of the variable.
 
-In this example, we created a variable called "myVar" and gave it the value of "Hello".
+In this example, we created a variable called "myVar" and gave it the value of "Hello" using the equals sign `=`, the assignment operator.
 
 ```Python
 greeting = "Hello"
@@ -123,6 +123,21 @@ print("The GST has changed to", gst)
 ```
 > The GST is 7
 > The GST has changed to 9
+```
+
+The `=` sign has nothing to do with equality! It's not like math where we say `1 + 2 = 3`. Instead, the Python `=` sign assigns a value to a variable. We can even do this:
+
+```Python
+age = 12
+print("This year I'm", age)
+
+age = age + 1
+print("Next year I'll be", age)
+```
+
+```
+> This year I'm 12
+> Next year I'll be 13
 ```
 
 ## Thinking time!
