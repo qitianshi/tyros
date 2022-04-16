@@ -275,7 +275,7 @@ Write a program that helps you evaluate new orders. Your program should take in 
 
 ---
 
-A quadratic equation may be expressed in terms of `ax² + bx + c = 0`, where `a` is a non-zero constant, and `b` and `c` are constants.
+A quadratic equation may be expressed in terms of `ax² + bx + c = 0`, where `a`, `b` and `c` are constants, and `a` is non-zero.
 
 Write a program that takes in the values of `a`, `b`, and `c`, and prints the two roots of the equation, assuming that the roots are real. (Hint: do you remember lower sec math?)
 
@@ -298,6 +298,12 @@ Write some code using the other logic operators (`and`, `or`, `not`) to get the 
 Operators let us manipulate data and variables. There are three types of operators: mathematical, comparison, and logical.
 
 In the next lesson, you'll see how we can further use these operators to make our code adapt to different scenarios!
+
+### Further reading
+Python has many other operators besides the ones we've covered: assignment, identity, membership, and bitwise.
+
+* [More Python operators](https://www.w3schools.com/python/python_operators.asp)
+* [Xor (exclusive or)](https://en.wikipedia.org/wiki/Exclusive_or)
 
 ---
 
