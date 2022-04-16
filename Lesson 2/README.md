@@ -283,11 +283,11 @@ Write a program that takes in the values of `a`, `b`, and `c`, and prints the tw
 
 `xor` is another useful logical operator that gives `True` only if exactly one of the two boolean values are `True`, but not both.
 
-| Expression | Result |
-| ---------- | ------ |
-| `True xor True` | `False` |
-| `True xor False` | `True` |
-| `False xor True` | `True` |
+| Expression        | Result  |
+| ----------------- | ------- |
+| `True xor True`   | `False` |
+| `True xor False`  | `True`  |
+| `False xor True`  | `True`  |
 | `False xor False` | `False` |
 
 Unfortunately, Python doesn't have a built-in `xor` operator, so you can't simply type `True xor False` in Python.
