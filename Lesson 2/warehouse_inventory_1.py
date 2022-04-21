@@ -23,3 +23,5 @@ price = orders * 15
 print("Am I accepting the order?", price >= 100 and orders <= stock)
 print("Amount of money I should receive:", price)
 print("How much stock I'll have left after fulfilling the order:", stock - orders)
+
+# We'll improve this code in the next lesson with if/else statements!
