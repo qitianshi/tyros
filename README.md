@@ -14,8 +14,8 @@ What we've covered so far:
 
 In future lessons, we'll cover:
 * **Lesson 3**: `if`/`else`
-* **Lesson 4**: `for` loops
-* **Lesson 5**: `while` loops
+* **Lesson 4**: `while` loops
+* **Lesson 5**: `for` loops
 
 ## Legal
 © 2022 Qi Tianshi and Tyros members.
