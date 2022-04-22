@@ -250,6 +250,6 @@ If/else statements allow us to control the flow of programmes by testing for spe
 In the next lesson, you will learn more about the different ways we can control the flow of our program!
 
 ### Further reading
-Flowcharts can actually be used to represent the flow of programs in many situations! Due to its wide applicability, there are conventions that govern how we draw flowcharts.
-
-- [Flowchart symbols](https://www.smartdraw.com/flowchart/flowchart-symbols.htm)
+* [If/else](https://www.w3schools.com/python/python_conditions.asp)
+* [Python indentation](https://www.w3schools.com/python/python_syntax.asp#python_indentation)
+* [Flowcharts](https://www.bbc.co.uk/bitesize/guides/z7kkw6f/revision/3)
