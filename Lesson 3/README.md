@@ -205,8 +205,8 @@ else:
     print("I guess I'll go hungry...")
 ```
 
-## More examples
-We can have _nested_ if/else statements by putting another if/else statement inside the body of an if/else statement. There are now two levels of indentation in our code.
+## Nested if/else
+We can have _nested_ if/else statements by putting an if/else statement inside the body of another if/else statement. There are now two levels of indentation in our code.
 
 ```Python
 weather = "sunny"
