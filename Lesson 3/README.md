@@ -44,6 +44,8 @@ if bought_shoes:
 
 Here, `bought_shoes` is the condition. If the condition is `True`, it runs the code that says `print("I bought shoes")`. If the condition is `False`, it skips the `print` statement. Try changing the value of `bought_shoes` to `False`. What happens now?
 
+Conditions in if/else statements can be any boolean expression or variable.
+
 ### Indentation
 Notice that the `print` statement in the code above is further to the right than the rest of the code. This is called **indentation**; we say that the `print` statement is "indented". You indent your code by typing a `tab` (with the `tab` key).
 
