@@ -1,4 +1,4 @@
-# Lesson 0 — setting up Replit
+# Lesson 0 — Setting up Replit
 
 We'll use [replit.com](https://replit.com) to run our code. Replit is a free online compiler that works with hundreds of languages, including the one we're using, Python!
 

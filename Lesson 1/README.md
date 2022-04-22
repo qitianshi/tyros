@@ -1,4 +1,4 @@
-# Lesson 1 — input/output, comments, and variables
+# Lesson 1 — Input/output, comments, and variables
 
 ## An introduction
 Computer science is about using computers to solve problems.

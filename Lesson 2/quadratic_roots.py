@@ -12,9 +12,6 @@
 # remember lower sec math?)
 
 
-# We'll put the solution here in a while. Try it yourself first!
-
-
 a = float(input("a: "))
 b = float(input("b: "))
 c = float(input("c: "))
