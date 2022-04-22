@@ -6,9 +6,9 @@ In the previous lesson, we learnt about how to make better use of data and varia
 All the programming we've learned so far has been linear — our code looks like step-by-step instructions that runs through every line. But what if we need our code to do different things in different situations? That's where the almighty if/else statement comes in!
 
 ## Conditions
-Do you remember my love for online shopping? In the last lesson, we wrote programmes that helped me decide whether I should buy shoes and jackets using [logic operators](https://github.com/qitianshi/tyros-resources/tree/main/Lesson%202#logical-operators). My parents told me that if I hadn't bought any shoes, I could go and buy a jacket.
+Do you remember my love for online shopping? In the last lesson, we wrote programmes that helped me decide whether I should buy shoes and jackets using [logic operators](https://github.com/qitianshi/tyros-resources/tree/main/Lesson%202#logical-operators).
 
-This is what the code for that example looked like:
+In one example, my parents told me that if I hadn't bought any shoes, I could go and buy a jacket. This is what the code for that example looked like:
 
 ```Python
 bought_shoes = False
@@ -39,28 +39,28 @@ This is what it looks like:
 bought_shoes = True
 
 if bought_shoes:
-    print("I bought shoes.")
+    print("I bought shoes")
 ```
 
-Here, `bought_shoes` is the condition. If the condition is `True`, it runs the code that says `print("I bought shoes.")`. If the condition is `False`, it skips the `print` statement. Try changing the value of `bought_shoes` to `False`. What happens now?
+Here, `bought_shoes` is the condition. If the condition is `True`, it runs the code that says `print("I bought shoes")`. If the condition is `False`, it skips the `print` statement. Try changing the value of `bought_shoes` to `False`. What happens now?
 
 ### Indentation
 Notice that the `print` statement in the code above is further to the right than the rest of the code. This is called **indentation**; we say that the `print` statement is "indented". You indent your code by typing a `tab` (with the `tab` key).
 
 Indentation is very important in Python. By indenting the `print` statement, we tell Python that it "belongs" to the `if` statement. If you don't indent your code properly, it might behave unexpectedly, or even not work at all!
 
-Try running this code.
+Try running this code:
 
 ```Python
 bought_shoes = True
 
 if bought_shoes:
-    print("I bought shoes.")
+    print("I bought shoes")
 
-print("I'm done shopping.")
+print("I'm done shopping")
 ```
 
-As expected, it prints both `I bought shoes.` and `I'm done shopping.`. Now, try changing the value of `bought_shoes` to `False`. Just as we saw just now, it skips the line that prints `I bought shoes.`, but it still prints `I'm done shopping.`
+As expected, it prints both `I bought shoes` and `I'm done shopping`. Now, try changing the value of `bought_shoes` to `False`. Just as we saw just now, it skips the line that prints `I bought shoes`, but it still prints `I'm done shopping`.
 
 Now, indent the last line, so your code ends up looking like this:
 
@@ -68,14 +68,14 @@ Now, indent the last line, so your code ends up looking like this:
 bought_shoes = True
 
 if bought_shoes:
-    print("I bought shoes.")
+    print("I bought shoes")
 
-    print("I'm done shopping.")
+    print("I'm done shopping")
 ```
 
 Try running this code, the first time with `bought_shoes = True` and the second time with `bought_shoes = False`. Now, when the condition is `True`, it prints both lines, but when the condition is `False`, neither line is printed.
 
-Diagrammatically, the first code looks like this:
+As a flowchart, the first code looks like this:
 
 ```mermaid
 flowchart TD
@@ -183,7 +183,9 @@ flowchart TD
   C2O2 --> End
 ```
 
-We can have as many `elif` statements as we want.
+`elif` is short for "else if". In fact, you can rewrite all `elif` statements as nested if/else statements [(see below)](https://github.com/qitianshi/tyros-resources/tree/main/Lesson%203#nested-ifelse). `elif` is an elegant shorthand that makes our code much easier to read.
+
+We can have as many `elif` statements as we want:
 
 ```Python
 price_of_salmon_bento_set = 18.90
@@ -206,7 +208,7 @@ else:
 ```
 
 ## Nested if/else
-We can have _nested_ if/else statements by putting an if/else statement inside the body of another if/else statement. There are now two levels of indentation in our code.
+We can have nested if/else statements by putting an if/else statement inside the body of another if/else statement. There are now two levels of indentation in our code.
 
 ```Python
 weather = "sunny"
@@ -225,10 +227,12 @@ else:
 Do you remember the inventory manager problem from last week?
 
 > You're the inventory manager for a warehouse that supplies soft drinks. You have a fixed number of cases of drinks in your stock. Each case costs $15. To cover delivery costs, the minimum order amount must be at least $100.
-
+>
 > Write a program that helps you evaluate new orders. Your program should take in the number of cases ordered, then decide if you should accept the order using the conditions above, as well as consider if you have enough cases to fufill the order. Print out: whether you're accepting the order, the amount of money you should receive, and how much stock you'll have left after fulfilling the order.
 
-Previously, because we hadn't learned if/else, our code was limited to printing "True" or "False", and we sometimes ended up with negative stocks! Using if/else statements, improve your code with more user-friendly messages. If the order is rejected, don't print the price of the order or the amount of stock left.
+Previously, because we hadn't learned if/else, our code was limited to printing "True" or "False", and we sometimes ended up with negative stocks!
+
+Using if/else statements, improve your code with more user-friendly messages. If the order is rejected, don't print the price of the order or the amount of stock left.
 
 ---
 
@@ -247,7 +251,7 @@ In Singapore, individual income taxes are calculated based on a progressive tax 
 ## Conclusion
 If/else statements allow us to control the flow of programmes by testing for specific conditions, and splitting it into multiple pathways.
 
-In the next lesson, you will learn more about the different ways we can control the flow of our program!
+In the next lesson, we'll explore more ways to control the flow of our programmes!
 
 ### Further reading
 * [If/else](https://www.w3schools.com/python/python_conditions.asp)
