@@ -1,4 +1,4 @@
-# Lesson 3 - If/Else Statements
+# Lesson 3 - If/else statements
 
 ## Introduction
 In the previous lesson, we learnt about how to make better use of data and variables using operators. [Here are the notes from Lesson 2 if you need a refresh.](https://github.com/qitianshi/tyros-resources/tree/main/Lesson%202)
