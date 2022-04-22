@@ -13,7 +13,7 @@ It will be extremely useful for us to have a way to represent if/else pictoriall
 
 Do you remember that I like shopping online? If you don't, it's alright! [Here's the place I declared my love for that!]()
 
-I remembered my parents told me that if I didn't buy any shoes, I can go and buy a jacket!
+I remembered my parents told me that if I didn't buy any shoes, I can go and buy a jacket! We can now use a flowchart to repesent my thought process!
 
 ```mermaid
 flowchart TD
@@ -22,9 +22,49 @@ flowchart TD
   Condition --> |No| Op2[I can buy new jackets!]
   Op1 --> End(End)
   Op2 --> End
-  
-  style Condition max-height: 
 ```
+**Note:** The symbol for decisions is conventionally set as a rhombus or diamond, but we opted with a flat hexagon here to save space.
+
+```python
+not_bought_shoes = True
+
+if not_bought_shoes:
+    print("I can buy a new jacket!")
+else:
+    print("I... I... can't buy the newest jacket...")
+```
+
+```
+> I can buy a new jacket!
+```
+
+## More Examples
+We can have _nested_ if/else statements by putting an if/else statement _inside_ the body of an if/else statement.
+
+```python
+weather = "sunny"
+work = "yes"
+
+if weather == "sunny":
+    if work == "no":
+        print("Let's go to the beach!")
+    else:
+        print("I have work to do....")
+else:
+    print("Seems like it will rain, I don't think we should go to the beach...")
+```
+
+```
+> I have work to do...
+```
+
+We can also test for multiple (mutually exclusive) conditions at the same time by using the keyword `elif`!
+
+```python
+
+```
+
+## Let's practise
 
 ## Conclusion
 
