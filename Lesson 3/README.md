@@ -1,66 +1,191 @@
 # Lesson 3 - If/Else Statements
 
 ## Introduction
-In the previous lesson, we learnt about how to make better use of data and variables using operators. [Here are the notes from Lesson 2 if you need a refresh.]()
+In the previous lesson, we learnt about how to make better use of data and variables using operators. [Here are the notes from Lesson 2 if you need a refresh.](https://github.com/qitianshi/tyros-resources/tree/main/Lesson%202)
 
-However, not everything can be done using just operators and variables. What if we have a few possible situations, and we need to have different outcomes based on each scenario? Not to worry if you have no idea what to do at this point, because what we will be learning today will help with this!
+All the programming we've learned so far has been linear — our code looks like step-by-step instructions that runs through every line. But what if we need our code to do different things in different situations? That's where the almighty if/else statement comes in!
 
-## What is an if/else statement?
-Also known as a conditional statement, if/else statements check if a given condition is true, and allow us to consider actions that only occur when something specfic happens (what we call _conditionals_)
+## Conditions
+Do you remember my love for online shopping? In the last lesson, we wrote programmes that helped me decide whether I should buy shoes and jackets using [logic operators](https://github.com/qitianshi/tyros-resources/tree/main/Lesson%202#logical-operators). My parents told me that if I hadn't bought any shoes, I could go and buy a jacket.
 
-### Using a flowchart to visualise if/else statements
-It will be extremely useful for us to have a way to represent if/else pictorially, as it will help us better understand how an if/else statement controls the flow of our program!
+This is what the code for that example looked like:
 
-Do you remember that I like shopping online? If you don't, it's alright! [Here's the place I declared my love for that!]()
+```Python
+bought_shoes = False
 
-I remembered my parents told me that if I didn't buy any shoes, I can go and buy a jacket! We can now use a flowchart to repesent my thought process!
+will_buy_jacket = not bought_shoes
+print("Will I buy a new jacket?", will_buy_jacket)
+```
+
+Let's use a flowchart to repesent my decision process. We'll be using flowcharts a lot in this lesson to visualise the different possible pathways our code can take.
 
 ```mermaid
 flowchart TD
   Start(Start) --> Condition{{Have I bought new shoes?}}
-  Condition -->|Yes| Op1[I can't buy new jackets...]
+  Condition --> |Yes| Op1[I can't buy new jackets...]
   Condition --> |No| Op2[I can buy new jackets!]
   Op1 --> End(End)
   Op2 --> End
 ```
-**Note:** The symbol for decisions is conventionally set as a rhombus or diamond, but we opted with a flat hexagon here to save space.
 
-```python
-not_bought_shoes = True
+Here, the condition is "Have I bought new shoes?" Depending on whether the condition is true or false, I do different things. My path splits into two, and I only perform one of those options. Of course, I would never do both, because a condition can't be both true _and_ false!
 
-if not_bought_shoes:
-    print("I can buy a new jacket!")
+## `if`
+All if/else statements make our code do different things depending on some condition. The simplest form is a single `if`.
+
+This is what it looks like:
+
+```Python
+bought_shoes = True
+
+if bought_shoes:
+    print("I bought shoes.")
+```
+
+Here, `bought_shoes` is the condition. If the condition is `True`, it runs the code that says `print("I bought shoes.")`. If the condition is `False`, it skips the `print` statement. Try changing the value of `bought_shoes` to `False`. What happens now?
+
+### Indentation
+Notice that the `print` statement in the code above is further to the right than the rest of the code. This is called **indentation**; we say that the `print` statement is "indented". You indent your code by typing a `tab` (with the `tab` key).
+
+Indentation is very important in Python. By indenting the `print` statement, we tell Python that it "belongs" to the `if` statement. If you don't indent your code properly, it might behave unexpectedly, or even not work at all!
+
+Try running this code.
+
+```Python
+bought_shoes = True
+
+if bought_shoes:
+    print("I bought shoes.")
+
+print("I'm done shopping.")
+```
+
+As expected, it prints both `I bought shoes.` and `I'm done shopping.`. Now, try changing the value of `bought_shoes` to `False`. Just as we saw just now, it skips the line that prints `I bought shoes.`, but it still prints `I'm done shopping.`
+
+Now, indent the last line, so your code ends up looking like this:
+
+```Python
+bought_shoes = True
+
+if bought_shoes:
+    print("I bought shoes.")
+
+    print("I'm done shopping.")
+```
+
+Try running this code, the first time with `bought_shoes = True` and the second time with `bought_shoes = False`. Now, when the condition is `True`, it prints both lines, but when the condition is `False`, neither line is printed.
+
+Diagrammatically, the first code looks like this:
+
+```mermaid
+flowchart TD
+  Start(Start) --> Condition{{bought_shoes}}
+  Condition --> |True| Op1[I bought shoes.]
+  Op1 --> A[I'm done shopping.]
+  Condition --> |False| A
+  A --> End(End)
+```
+
+And the second code looks like this:
+
+```mermaid
+flowchart TD
+  Start(Start) --> Condition{{bought_shoes}}
+  Condition --> |True| Op1[I bought shoes.]
+  Op1 --> A[I'm done shopping.]
+  A --> End(End)
+  Condition --> |False| End
+```
+
+## `if`, `else`
+You can also define a sequence of actions for if the condition is `False`, using the `else` statement.
+
+If the condition is true, Python will run the code indented under the `if` statement. If the condition is false, Python will run the code under the `else` statement. Pay careful attention to how everything is indented.
+
+```Python
+bought_shoes = True
+
+if bought_shoes:
+    print("I bought shoes.")
 else:
-    print("I... I... can't buy the newest jacket...")
+    print("I didn't buy shoes.")
 ```
 
+Once again, try changing the value of `bought_shoes` to see how your code behaves. Also try adding more lines of code under the `if` and `else` statements, and play with their indentations.
+
+Here's what our code looks like as a flowchart:
+
+```mermaid
+flowchart TD
+  Start(Start) --> Condition{{bought_shoes}}
+  Condition --> |True| Op1[I bought shoes.]
+  Condition --> |False| Op2[I didn't buy shoes.]
+  Op1 --> End(End)
+  Op2 --> End
 ```
-> I can buy a new jacket!
-```
 
-## More Examples
-We can have _nested_ if/else statements by putting an if/else statement _inside_ the body of an if/else statement.
+You can't write an `else` without an `if`.
 
-```python
-weather = "sunny"
-work = "yes"
-
-if weather == "sunny":
-    if work == "no":
-        print("Let's go to the beach!")
-    else:
-        print("I have work to do....")
+```Python
+# This won't work!
 else:
-    print("Seems like it will rain, I don't think we should go to the beach...")
+    print("The else condition.")
 ```
 
-```
-> I have work to do...
+You also can't write conditions after `else`. Remember, `else` simply runs whenever the condition after `if` is `False`.
+
+```Python
+# This doesn't work either!
+else some_condition:
+    print("The else condition.")
 ```
 
-We can also test for multiple (mutually exclusive) conditions at the same time by using the keyword `elif`!
+Finally, an `else` statement must immediately follow an `if` statement's indented block.
 
-```python
+```Python
+# This also won't work!
+
+if some_condition:
+    print("The if condition.")
+
+print("Unindented code.")
+
+else some_condition:
+    print("The else condition.")
+```
+
+## `if`, `elif`, `else`
+Finally, we can have our code evaluate a second condition if the first condition evaluated to `False`, using `elif`.
+
+```Python
+price_of_salmon_bento = 18.90
+price_of_chicken_bento = 12.90
+
+money_i_have = 15.00
+
+if money_i_have >= price_of_salmon_bento:
+    print("I'll have the salmon bento set!")
+elif money_i_have >= price_of_chicken_bento:
+    print("I'll have the chicken bento set!")
+else:
+    print("I guess I'll go hungry...")
+```
+
+```mermaid
+flowchart TD
+  Start(Start) --> Cond1{{money_i_have >= price_of_salmon_bento}}
+  Cond1 --> |True| C1O1[I'll have the salmon bento set!]
+  Cond1 --> |False| Cond2{{money_i_have >= price_of_chicken_bento}}
+  Cond2 --> |True| C2O1[I'll have the chicken bento set!]
+  Cond2 --> |False| C2O2[I guess I'll go hungry...]
+  C1O1 --> End(End)
+  C2O1 --> End
+  C2O2 --> End
+```
+
+We can have as many `elif` statements as we want.
+
+```Python
 price_of_salmon_bento_set = 18.90
 price_of_chicken_bento_set = 12.90
 price_of_seaweed_rice_set = 7.90
@@ -68,54 +193,59 @@ price_of_onigiri = 3.00
 
 money_i_have = 15.00
 
-if money_i_have >= 18.90:
-    print("I will have the salmon bento set!")
-elif money_i_have >= 12.90:
-    print("I will have the chicken bento set!")
-elif money_i_have >= 7.90:
-    print("I will have the seaweed bento set!")
-elif money_i_have >= 3.00:
-    print("I will have the onigiri!")
+if money_i_have >= price_of_salmon_bento_set:
+    print("I'll have the salmon bento set!")
+elif money_i_have >= price_of_chicken_bento_set:
+    print("I'll have the chicken bento set!")
+elif money_i_have >= price_of_seaweed_rice_set:
+    print("I'll have the seaweed bento set!")
+elif money_i_have >= price_of_onigiri:
+    print("I'll have the onigiri!")
 else:
-    print("I guess I will go hungry...")
+    print("I guess I'll go hungry...")
 ```
 
+## More examples
+We can have _nested_ if/else statements by putting another if/else statement inside the body of an if/else statement. There are now two levels of indentation in our code.
+
+```Python
+weather = "sunny"
+work = True
+
+if weather == "sunny":
+    if not work:
+        print("Let's go to the beach!")
+    else:
+        print("I have work to do....")
+else:
+    print("Seems like it will rain, I don't think we should go to the beach...")
 ```
-> I will have the chicken bento set!"
-```
 
-**Stop and ponder:** Why don't we have to account for the upper bounds of `money_i_have` in the `elif` clauses?
+## Let's practise
+Do you remember the inventory manager problem from last week?
 
-## Let's practise 
-You're the inventory manager for a warehouse that supplies soft drinks. You have a fixed number of cases of drinks in your stock. Each case costs $15. To cover delivery costs, the minimum order amount must be at least $100.
+> You're the inventory manager for a warehouse that supplies soft drinks. You have a fixed number of cases of drinks in your stock. Each case costs $15. To cover delivery costs, the minimum order amount must be at least $100.
 
-Write a program that helps you evaluate new orders. Your program should take in the number of cases ordered, then decide if you should accept the order using the conditions above, as well as consider if you have enough cases to fufill the order. Print out: whether you're accepting the order, the amount of money you should receive, and how much stock you'll have left after fulfilling the order.
+> Write a program that helps you evaluate new orders. Your program should take in the number of cases ordered, then decide if you should accept the order using the conditions above, as well as consider if you have enough cases to fufill the order. Print out: whether you're accepting the order, the amount of money you should receive, and how much stock you'll have left after fulfilling the order.
 
----
-
-You are visiting your favourite Korean restaurant, and it offers a variety of foods as shown in their menu:
-
-| Item                               | Price |
-|------------------------------------|-------|
-| Spicy Chicken Bulgogi Set          | 12.90 |
-| Kimchi Fried Rice                  | 9.00  |
-| Pancake                            | 5.00  |
-| Tteok-bokki (Korean Rice Cake)     | 5.00  |
-
-Write a program that helps you decide whether to place an order. Your program should take in the amount of money you have initially, the number of each item you want to purchase, then place the order only if you have enough money. You should also print out how much money you have left in the end should you have placed an order.
+Previously, use if/else statements to improve your code with more user-friendly messages.
 
 ---
 
 I need some help to decide how I should spend my time! I can do the following things depending on what is happening tomorrow:
 
-- Sleep early (provided that I have completed my homework or none of my friends are online, and there is no school tomorrow)
-- Homework (provided that there is school tomorrow)
-- Play some games (provided that I have friends online and there is no school tomorrow)
+* Sleep early (if I have completed my homework or none of my friends are online, and there is no school tomorrow)
+* Homework (if there is school tomorrow)
+* Play some games (if I have friends online and there is no school tomorrow)
 
 Write a program that allows me to input if I have school tomorrow, if I have completed my homework and if I have friends online, then print what I should do!
 
+---
+
+In Singapore, individual income taxes are calculated based on a progressive tax model. Using the [information on the IRAS website](https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-residency-and-tax-rates/individual-income-tax-rates), write an income tax calculator for a tax resident for 2022.
+
 ## Conclusion
-If/Else statements allow us to control the flow of programs by testing for specific conditions.
+If/else statements allow us to control the flow of programmes by testing for specific conditions, and splitting it into multiple pathways.
 
 In the next lesson, you will learn more about the different ways we can control the flow of our program!
 
