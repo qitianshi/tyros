@@ -61,12 +61,63 @@ else:
 We can also test for multiple (mutually exclusive) conditions at the same time by using the keyword `elif`!
 
 ```python
+price_of_salmon_bento_set = 18.90
+price_of_chicken_bento_set = 12.90
+price_of_seaweed_rice_set = 7.90
+price_of_onigiri = 3.00
 
+money_i_have = 15.00
+
+if money_i_have >= 18.90:
+    print("I will have the salmon bento set!")
+elif money_i_have >= 12.90:
+    print("I will have the chicken bento set!")
+elif money_i_have >= 7.90:
+    print("I will have the seaweed bento set!")
+elif money_i_have >= 3.00:
+    print("I will have the onigiri!")
+else:
+    print("I guess I will go hungry...")
 ```
 
-## Let's practise
+```
+> I will have the chicken bento set!"
+```
+
+**Stop and ponder:** Why don't we have to account for the upper bounds of `money_i_have` in the `elif` clauses?
+
+## Let's practise 
+You're the inventory manager for a warehouse that supplies soft drinks. You have a fixed number of cases of drinks in your stock. Each case costs $15. To cover delivery costs, the minimum order amount must be at least $100.
+
+Write a program that helps you evaluate new orders. Your program should take in the number of cases ordered, then decide if you should accept the order using the conditions above, as well as consider if you have enough cases to fufill the order. Print out: whether you're accepting the order, the amount of money you should receive, and how much stock you'll have left after fulfilling the order.
+
+---
+
+You are visiting your favourite Korean restaurant, and it offers a variety of foods as shown in their menu:
+
+| Item                               | Price |
+|------------------------------------|-------|
+| Spicy Chicken Bulgogi Set          | 12.90 |
+| Kimchi Fried Rice                  | 9.00  |
+| Pancake                            | 5.00  |
+| Tteok-bokki (Korean Rice Cake)     | 5.00  |
+
+Write a program that helps you decide whether to place an order. Your program should take in the amount of money you have initially, the number of each item you want to purchase, then place the order only if you have enough money. You should also print out how much money you have left in the end should you have placed an order.
+
+---
+
+I need some help to decide how I should spend my time! I can do the following things depending on what is happening tomorrow:
+
+- Sleep early (provided that I have completed my homework or none of my friends are online, and there is no school tomorrow)
+- Homework (provided that there is school tomorrow)
+- Play some games (provided that I have friends online and there is no school tomorrow)
+
+Write a program that allows me to input if I have school tomorrow, if I have completed my homework and if I have friends online, then print what I should do!
 
 ## Conclusion
+If/Else statements allow us to control the flow of programs by testing for specific conditions.
+
+In the next lesson, you will learn more about the different ways we can control the flow of our program!
 
 ### Further reading
 Flowcharts can actually be used to represent the flow of programs in many situations! Due to its wide applicability, there are conventions that govern how we draw flowcharts.
