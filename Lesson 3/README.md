@@ -6,7 +6,7 @@ In the previous lesson, we learnt about how to make better use of data and varia
 All the programming we've learned so far has been linear — our code looks like step-by-step instructions that runs through every line. But what if we need our code to do different things in different situations? That's where the almighty if/else statement comes in!
 
 ## Conditions
-Do you remember my love for online shopping? In the last lesson, we wrote programmes that helped me decide whether I should buy shoes and jackets using [logic operators](https://github.com/qitianshi/tyros-resources/tree/main/Lesson%202#logical-operators).
+Do you remember my love for online shopping? In the last lesson, we wrote programmes that helped me decide whether I should buy shoes and jackets using [logical operators](https://github.com/qitianshi/tyros-resources/tree/main/Lesson%202#logical-operators).
 
 In one example, my parents told me that if I hadn't bought any shoes, I could go and buy a jacket. This is what the code for that example looked like:
 
