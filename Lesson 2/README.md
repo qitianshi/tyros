@@ -305,7 +305,7 @@ Write some code using the other logic operators (`and`, `or`, `not`) to get the 
 ## Conclusion
 Operators let us manipulate data and variables. There are three types of operators: mathematical, comparison, and logical.
 
-In the next lesson, you'll see how we can further use these operators to make our code adapt to different scenarios!
+[In the next lesson](https://github.com/qitianshi/tyros-resources/tree/main/Lesson%203), you'll see how we can further use these operators to make our code adapt to different scenarios!
 
 ### Further reading
 Python has many other operators besides the ones we've covered: assignment, identity, membership, and bitwise.

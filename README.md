@@ -11,11 +11,11 @@ What we've covered so far:
 * [**Lesson 0**](https://github.com/qitianshi/tyros-resources/tree/main/Lesson%200): Setting up Replit
 * [**Lesson 1**](https://github.com/qitianshi/tyros-resources/tree/main/Lesson%201): Input/output, comments, and variables
 * [**Lesson 2**](https://github.com/qitianshi/tyros-resources/tree/main/Lesson%202): Operators
+* [**Lesson 3**](https://github.com/qitianshi/tyros-resources/tree/main/Lesson%203): If/else statements
 
 In future lessons, we'll cover:
-* **Lesson 3**: `if`/`else`
-* **Lesson 4**: `while` loops
-* **Lesson 5**: `for` loops
+* **Lesson 4**: `for` loops
+* **Lesson 5**: `while` loops
 
 ## Legal
 © 2022 Qi Tianshi and Tyros members.
