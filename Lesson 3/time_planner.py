@@ -9,7 +9,7 @@
 
 # * Sleep early (if I have completed my homework or none of my friends are
 #   online, and there is no school tomorrow)
-# * Homework(if there is school tomorrow)
+# * Homework (if there is school tomorrow)
 # * Play some games (if I have friends online and there is no school tomorrow)
 
 # Write a program that allows me to input if I have school tomorrow, if I have
