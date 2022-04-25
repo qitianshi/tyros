@@ -1,5 +1,5 @@
 # Lesson 3 - If/else statements
-# Solution to Practise Question 3
+# Solution to Practice Question 3
 
 # Copyright 2022 Qi Tianshi and Tyros members. Licensed under GNU GPLv3.
 
