@@ -14,8 +14,8 @@ What we've covered so far:
 * [**Lesson 3**](https://github.com/qitianshi/tyros-resources/tree/main/Lesson%203): If/else statements
 
 In future lessons, we'll cover:
-* **Lesson 4**: `for` loops
-* **Lesson 5**: `while` loops
+* **Lesson 4**: `while` loops
+* **Lesson 5**: `for` loops
 
 ## Legal
 © 2022 Qi Tianshi and Tyros members.
