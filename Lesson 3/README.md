@@ -236,6 +236,8 @@ Previously, because we hadn't learned if/else, our code was limited to printing 
 
 Using if/else statements, improve your code with more user-friendly messages. If the order is rejected, don't print the price of the order or the amount of stock left.
 
+[**Solution**](https://github.com/qitianshi/tyros-resources/blob/main/Lesson%203/warehouse_inventory_2.py)
+
 ---
 
 I need some help to decide how I should spend my time! I can do the following things depending on what is happening tomorrow:
@@ -246,9 +248,13 @@ I need some help to decide how I should spend my time! I can do the following th
 
 Write a program that allows me to input if I have school tomorrow, if I have completed my homework and if I have friends online, then print what I should do!
 
+[**Solution**](https://github.com/qitianshi/tyros-resources/blob/main/Lesson%203/time_planner.py)
+
 ---
 
 In Singapore, individual income taxes are calculated based on a progressive tax model. Using the [information on the IRAS website](https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-residency-and-tax-rates/individual-income-tax-rates), write an income tax calculator for a tax resident for 2022.
+
+[**Solution**](https://github.com/qitianshi/tyros-resources/blob/main/Lesson%203/tax_calculator.py)
 
 ## Conclusion
 If/else statements allow us to control the flow of programmes by testing for specific conditions, and splitting it into multiple pathways.
