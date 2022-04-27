@@ -25,4 +25,20 @@
 # stock left.
 
 
+stock = 100
+orders = int(input("Enter the number of cases: "))
+# You need to use int() to convert the string input to an integer.
 
+price = orders * 15
+
+if stock - orders >= 0:
+    if price > 100:
+        print("I accept the order")
+        print("Amount of money I should receive:", price)
+        stock = stock - orders
+        print("How much stock I'll have left after fulfilling the order:", stock)
+    else:
+        print("order is below minimum order requirement")
+
+else:
+   print("Out of stock sorry")
