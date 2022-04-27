@@ -1,5 +1,5 @@
 # Lesson 2 - Operators
-# Solution to Practise Question 4
+# Solution to Practice Question 4
 
 # Copyright 2022 Qi Tianshi and Tyros members. Licensed under GNU GPLv3.
 
