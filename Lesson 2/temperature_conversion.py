@@ -9,4 +9,7 @@
 # conversion formula.)
 
 
-# We'll put the solution here in a while. Try it yourself first!
+temperature_in_fahrenheit = int(input("Enter temperature in Fahrenheit: "))
+temperature_in_celsius = (temperature_in_fahrenheit - 32) * 5/9
+
+print("Temperature in celsius is", temperature_in_celsius)

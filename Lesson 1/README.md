@@ -1,4 +1,4 @@
-# Lesson 1 — input/output, comments, and variables
+# Lesson 1 — Input/output, comments, and variables
 
 ## An introduction
 Computer science is about using computers to solve problems.
@@ -193,7 +193,7 @@ It just prints `Hi!`. When a new value is assigned, the variable forgets its old
 ## Conclusion
 In this lesson you learned about how to get output from your Python code using the `print` function, how to get input from the console using the `input` function, how to write notes in your code with comments, and how to create, modify, and print variables.
 
-In the next lesson, you'll learn more about what we can do with these simple tools!
+[In the next lesson](https://github.com/qitianshi/tyros-resources/tree/main/Lesson%202), you'll learn more about what we can do with these simple tools!
 
 ### Further reading
 We've only covered the basics in this lesson. If you're keen to learn more, we've compiled a list of in-depth resources you can use to further your understanding.

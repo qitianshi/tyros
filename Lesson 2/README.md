@@ -110,14 +110,14 @@ Comparison operators are used to compare two values. They give us either `True` 
 
 Python comparison operators are just like math! Here's a handy table to help you remember:
 
-| Math | Python | Description | Example |
-| ---- | ------ | ----------- | ------- |
-| =    | `==`   | equal to    | `1 + 2 == 3` |
-| ≠    | `!=`   | not equal to | `2 - 1 != 5` |
-| >    | `>`    | greater than | `5 > 2` |
+| Math | Python | Description              | Example           |
+| ---- | ------ | ------------------------ | ----------------- |
+| =    | `==`   | equal to                 | `1 + 2 == 3`      |
+| ≠    | `!=`   | not equal to             | `2 - 1 != 5`      |
+| >    | `>`    | greater than             | `5 > 2`           |
 | ≥    | `>=`   | greater than or equal to | `5 > 2`, `3 >= 3` |
-| <    | `<`    | less than | `1 < 3` |
-| ≤    | `<=`   | less than or equal to | `1 < 3`, `3 <= 3` |
+| <    | `<`    | less than                | `1 < 3`           |
+| ≤    | `<=`   | less than or equal to    | `1 < 3`, `3 <= 3` |
 
 Printing the result of a comparison will only give us one of two possible values, `True` or `False`.
 
@@ -162,11 +162,11 @@ There are three main logical operators:
 ### `or`
 The `or` operator tests two boolean values. If _either_ of the tests are `True`, then the result of `or` is `True`. Only if _both_ of the tests return a result of `False` will `or` give a result of `False`.
 
-| Expression | Result |
-| ---------- | ------ |
-| `True or True` | `True` |
-| `True or False` | `True` |
-| `False or True` | `True` |
+| Expression       | Result  |
+| ---------------- | ------- |
+| `True or True`   | `True`  |
+| `True or False`  | `True`  |
+| `False or True`  | `True`  |
 | `False or False` | `False` |
 
 I like shopping online! If I need new shoes, I'll go and buy a pair online. But if I see a discount, I'll still buy a pair even if I don't need them. In other words, if I need new shoes, _or_ they're on discount, I'll buy them.
@@ -188,11 +188,11 @@ print("Will I buy new shoes?", will_buy_shoes)
 ### `and`
 If _both_ the tests are `True`, then `and` gives `True`. However, if _either_ of the tests are `False`, then `and` gives a result of `False`.
 
-| Expression | Result |
-| ---------- | ------ |
-| `True and True` | `True` |
-| `True and False` | `False` |
-| `False and True` | `False` |
+| Expression        | Result  |
+| ----------------- | ------- |
+| `True and True`   | `True`  |
+| `True and False`  | `False` |
+| `False and True`  | `False` |
 | `False and False` | `False` |
 
 My parents have scolded me for my online shopping habits 🙁. Now, they say I can only buy new shoes if I need them _and_ they're also on discount! Let's change our previous Python program a little bit.
@@ -212,10 +212,10 @@ print("Will I buy new shoes?", will_buy_shoes)
 ### `not`
 Unlike `and` and `or`, `not` acts only on a single boolean value. It simply inverses it — `True` becomes `False`, and `False` becomes `True`.
 
-| Expression | Result |
-| ---------- | ------ |
-| `not True` | `False` |
-| `not False` | `True` |
+| Expression  | Result  |
+| ----------- | ------- |
+| `not True`  | `False` |
+| `not False` | `True`  |
 
 My parents have softened up a bit. Now they say that if I didn't buy any shoes, I can go and buy a jacket!
 
@@ -267,17 +267,23 @@ print("Should I buy the meal?", should_buy_meal)
 ## Let's practise
 Write a program that takes in a temperature in fahrenheit, converts it to celsius, then prints the result. (Hint: you'll need to search for the conversion formula.)
 
+[**Solution**](https://github.com/qitianshi/tyros-resources/blob/main/Lesson%202/temperature_conversion.py)
+
 ---
 
 You're the inventory manager for a warehouse that supplies soft drinks. You have a fixed number of cases of drinks in your stock. Each case costs $15. To cover delivery costs, the minimum order amount must be at least $100.
 
 Write a program that helps you evaluate new orders. Your program should take in the number of cases ordered, then decide if you should accept the order using the conditions above. Print out: whether you're accepting the order, the amount of money you should receive, and how much stock you'll have left after fulfilling the order.
 
+[**Solution**](https://github.com/qitianshi/tyros-resources/blob/main/Lesson%202/warehouse_inventory_1.py)
+
 ---
 
 A quadratic equation may be expressed in terms of `ax² + bx + c = 0`, where `a`, `b` and `c` are constants, and `a` is non-zero.
 
 Write a program that takes in the values of `a`, `b`, and `c`, and prints the two roots of the equation, assuming that the roots are real. (Hint: do you remember lower sec math?)
+
+[**Solution**](https://github.com/qitianshi/tyros-resources/blob/main/Lesson%202/quadratic_roots.py)
 
 ---
 
@@ -294,16 +300,20 @@ Unfortunately, Python doesn't have a built-in `xor` operator, so you can't simpl
 
 Write some code using the other logic operators (`and`, `or`, `not`) to get the same result as `xor` would give you. Test your code using the 4 examples in the table above.
 
+[**Solution**](https://github.com/qitianshi/tyros-resources/blob/main/Lesson%202/xor_operator.py)
+
 ## Conclusion
 Operators let us manipulate data and variables. There are three types of operators: mathematical, comparison, and logical.
 
-In the next lesson, you'll see how we can further use these operators to make our code adapt to different scenarios!
+[In the next lesson](https://github.com/qitianshi/tyros-resources/tree/main/Lesson%203), you'll see how we can further use these operators to make our code adapt to different scenarios!
 
 ### Further reading
 Python has many other operators besides the ones we've covered: assignment, identity, membership, and bitwise.
 
 * [More Python operators](https://www.w3schools.com/python/python_operators.asp)
 * [Xor (exclusive or)](https://en.wikipedia.org/wiki/Exclusive_or)
+* [Logic gate](https://en.wikipedia.org/wiki/Logic_gate)
+* [Modulo](https://en.wikipedia.org/wiki/Modulo_(mathematics))
 
 ---
 
