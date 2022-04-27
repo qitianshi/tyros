@@ -31,14 +31,14 @@ orders = int(input("Enter the number of cases: "))
 
 price = orders * 15
 
-if stock - orders >= 0:
-    if price > 100:
-        print("I accept the order")
-        print("Amount of money I should receive:", price)
-        stock = stock - orders
-        print("How much stock I'll have left after fulfilling the order:", stock)
-    else:
-        print("order is below minimum order requirement")
+if price < 100:
+    print("Order is less than the minimum required amount.")
+
+elif stock - orders < 0:
+    print("We're out of stock.")
 
 else:
-   print("Out of stock sorry")
+    stock -= orders
+    print("The order is accepted.")
+    print("Price of order:", price)
+    print("Remaining stock:", stock)
