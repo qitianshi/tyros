@@ -236,6 +236,26 @@ Previously, because we hadn't learned if/else, our code was limited to printing 
 
 Using if/else statements, improve your code with more user-friendly messages. If the order is rejected, don't print the price of the order or the amount of stock left.
 
+```Python
+stock = 100
+orders = int(input("Enter the number of cases: "))  
+# You need to use int() to convert the string input to an integer.
+
+price = orders * 15
+
+if stock - orders >= 0:
+  if price > 100:
+    print("I accept the order")
+    print("Amount of money I should receive:", price)
+    stock = stock - orders
+    print("How much stock I'll have left after fulfilling the order:", stock)
+  else:
+    print("order is below minimum order requirement")
+
+else: 
+  print("Out of stock sorry")
+```
+
 ---
 
 I need some help to decide how I should spend my time! I can do the following things depending on what is happening tomorrow:
