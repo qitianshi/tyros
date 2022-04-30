@@ -36,3 +36,11 @@ else:
     tax_payable = (income - 320000) * 0.22 + 44550
 
 print("Your personal income tax is:", tax_payable)
+
+
+# This code might be considered badly writen because it contains a lot of
+# repetition, and its data is all over the place. If one of the tax bracekts
+# were to change, we'd have to manually recalculate everything! We wrote our
+# solution code like this because so far we've only learned if/else. If you're
+# feeling adventurous, research for loops and lists and try using them to
+# improve this code!
