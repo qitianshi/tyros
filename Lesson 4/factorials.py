@@ -8,3 +8,13 @@
 # its preceding integers. It is denoted by the `!` mark. For example,
 # `5! = 5 × 4 × 3 × 2 × 1 = 120`. Write a programme that takes in an integer,
 # and calculates its factorial.
+
+
+factorial_of = int(input("Find the factorial of: "))
+result = 1
+
+while factorial_of >= 1:
+    result *= factorial_of
+    factorial_of -= 1
+
+print(result)
