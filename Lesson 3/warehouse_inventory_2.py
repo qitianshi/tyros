@@ -42,3 +42,9 @@ else:
     print("The order is accepted.")
     print("Price of order:", price)
     print("Remaining stock:", stock)
+
+
+# As with all programming questions, there are a myriad of ways to approach
+# this problem and expand its scope. For instance, you might consider what
+# happens if new stock arrives, or how to distinguish between different brands
+# of soft drinks. Try adding those yourself!
