@@ -28,3 +28,47 @@
 
 # Afterwards, it should show me the original menu again, so I can make as many
 # operations as I want.
+
+
+while True:
+
+    print("----------")
+
+    print("0: Quit")
+    print("1: Add")
+    print("2: Subtract")
+    print("3: Multiply")
+    print("4: Divide")
+
+    option = int(input("Choose an option: "))
+
+    if option == 0:
+        break
+
+    elif option == 1:           # Add
+        a = float(input("First number: "))
+        b = float(input("Second number to add: "))
+        result = a + b
+
+    elif option == 2:           # Subtract
+        a = float(input("First number: "))
+        b = float(input("Second number to subtract: "))
+        result = a - b
+
+    elif option == 3:           # Multiply
+        a = float(input("First number: "))
+        b = float(input("Second number to multiply: "))
+        result = a * b
+
+    elif option == 4:           # Divide
+        a = float(input("First number: "))
+        b = float(input("Second number to divide: "))
+        result = a / b
+
+    else:
+        print("Invalid option.")
+        continue
+
+    print("The result is", result)
+
+    input("Press enter to continue.")       # Waits for the user to press enter.
