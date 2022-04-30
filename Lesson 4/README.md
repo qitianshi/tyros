@@ -145,9 +145,9 @@ while True:
     running_total += added_amount
 ```
 
-At a fundamental level, most computers, control systems, and robotics are continuously running some form of infinite loop. For instance, you'd want your laptop to work the same way today as it did yesterday. The operating system on your laptop is essentially running in an infinite loop, because it is forever taking in your input (like your mouse and keyboard) and responding to it.
+At a fundamental level, most computers, control systems, and robotics are continuously running some form of infinite loop. For instance, you'd want your laptop to work the same way today as it did yesterday. The operating system on your laptop is essentially running in an infinite loop, because it's forever taking in your input (like your mouse and keyboard) and responding to it.
 
-At our level, we're not working so close to the metal (the most fundamental levels of computers like CPUs and RAM). When we use `while True` loops, it's typically because we want our programme to perform something indefinitely (as in the above example), or because we implement checks to exit the loop elsewhere, using `break` or `continue`.
+At our level, we're not working so close to the metal (the most foundational levels of computers like CPUs and RAM). When we use `while True` loops, it's typically because we want our programme to perform something indefinitely (as in the above example), or because we implement checks to exit the loop elsewhere, using `break` or `continue`. You'll explore these applications in the practice questions below.
 
 ## Let's practise
 In maths, the factorial of an integer is the product of that integer and all its preceding integers. It is denoted by the `!` mark. For example, `5! = 5 × 4 × 3 × 2 × 1 = 120`. Write a programme that takes in an integer, and calculates its factorial.
