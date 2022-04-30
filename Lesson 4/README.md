@@ -148,9 +148,13 @@ while True:
 ## Let's practise
 In maths, the factorial of an integer is the product of that integer and all its preceding integers. It is denoted by the `!` mark. For example, `5! = 5 × 4 × 3 × 2 × 1 = 120`. Write a programme that takes in an integer, and calculates its factorial.
 
+[**Solutions**](https://github.com/qitianshi/tyros-resources/blob/main/Lesson%204/factorials.py)
+
 ---
 
 Let's play a number guessing game. The user will think of a number between 1 and 10. A Python programme will guess the number and ask if it's right or wrong. If the guess is wrong, the programme will guess again. If the guess is right, the game will finish, and the programme will display the number of rounds it's taken to guess the number correctly.
+
+[**Solutions**](https://github.com/qitianshi/tyros-resources/blob/main/Lesson%204/number_guesser.py)
 
 ---
 
@@ -173,6 +177,8 @@ I will choose an option by typing its number. Your programme should include a ch
 Then, your programme should ask me for two numbers. It will then perform the operation, and display the number.
 
 Afterwards, it should show me the original menu again, so I can make as many operations as I want.
+
+[**Solutions**](https://github.com/qitianshi/tyros-resources/blob/main/Lesson%204/calculator.py)
 
 ## Conclusion
 Loops are essential devices in programming that let your programme repeat a set of steps. At the most fundamental level, almost all computers are running some sort of loop. In this lesson, we learned about the while loop, a type of loop that repeats for as long as a given condition is true.
