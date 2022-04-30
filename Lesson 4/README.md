@@ -33,7 +33,7 @@ print("You've gone over!")
 
 Try running this code and typing in different guesses. You'll see that as long as the condition is true (your guess being less than the actual price), the contents of the loop repeat indefinitely, over and over again. But, the moment your guess goes over, the condition will be false, the loop will exit, and the programme moves on to `print("You've gone over!")`.
 
-Notice that we've had to _initialise_ the `guess` variable in line 2 by giving it a starting value (`0`, in this case). Try commenting out that line and see what happens. When the while loop goes to check the condition, the `guess` variable would be undefined, and we'd get an error.
+Notice that we've had to _initialise_ the `guess` variable in line 2 by giving it a starting value (`0`, in this case). Try commenting out that line and see what happens. When the while loop goes to check the condition, the `guess` variable would be undefined, and we'd get an error. It's important to not only define our variables, but also to give them a meaningful starting value. In the example above, if our initial value had been greater than 50, the while loop would never have run!
 
 ### While loop conditions
 Try running this.
