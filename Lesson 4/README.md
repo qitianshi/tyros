@@ -150,6 +150,10 @@ In maths, the factorial of an integer is the product of that integer and all its
 
 ---
 
+Let's play a number guessing game. The user will think of a number between 1 and 10. A Python programme will guess the number and ask if it's right or wrong. If the guess is wrong, the programme will guess again. If the guess is right, the game will finish, and the programme will display the number of rounds it's taken to guess the number correctly.
+
+---
+
 I want to do math with Python! Help me make a calculator that is able to add, subtract, multiply and divide.
 
 Your programme should first display a menu that looks like this:
