@@ -102,6 +102,8 @@ else:
 
 Typically, we only write `break` inside of an if/else, so the loop only breaks when a condition is met. Otherwise, the loop will always break when it reaches that line, making the loop redundant!
 
+As always, there are many ways to approach any problem in programming. It's possible to change the above code so it doesn't use the `break` statement at all, and relies entirely on the while condition. (Try coding it yourself!) As you become more experienced with programming, you'll be able to tell which situations demand which approach.
+
 Just as a quick aside, if you're using a password like "Password1", "12345678", or your birthday, or if you're using the same password for all your accounts, please take steps to strengthen your online security. Strong passwords needn't be complicated and difficult to remember — the one we used in our example is easily memorable ("tall lamppost at Sixth Ave") but still contains upper and lowercase letters, numbers, and symbols. If there's one thing you take away from this course, make it this. [How to choose better passwords.](https://www.popsci.com/how-to-choose-safe-passwords/)
 
 ## `continue`
