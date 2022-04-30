@@ -189,7 +189,7 @@ Afterwards, it should show me the original menu again, so I can make as many ope
 ## Conclusion
 Loops are essential devices in programming that let your programme repeat a set of steps. At the most fundamental level, almost all computers are running some sort of loop. In this lesson, we learned about the while loop, a type of loop that repeats for as long as a given condition is true.
 
-In the next lesson, we'll learn about another type of loop: the for loop.
+In the next lesson, we'll learn about another type of loop: the for loop!
 
 ### Further reading
 * [Python while loops](https://www.w3schools.com/python/python_while_loops.asp)
