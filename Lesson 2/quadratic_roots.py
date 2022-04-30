@@ -18,7 +18,7 @@ c = float(input("c: "))
 
 # This part uses the quadratic formula: https://en.wikipedia.org/wiki/Quadratic_formula
 # For the square root, recall that √x = x^0.5
-root1 = (-b + (b**2-(4*a*c))**0.5)/(2*a)
-root2 = (-b - (b**2-(4*a*c))**0.5)/(2*a)
+root1 = (-b + (b ** 2 - (4 * a * c)) ** 0.5) / (2 * a)
+root2 = (-b - (b ** 2 - (4 * a * c)) ** 0.5) / (2 * a)
 
 print("The roots are", root1, "and", root2)
