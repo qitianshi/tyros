@@ -252,6 +252,7 @@ In the next lesson, we'll explore more ways to control the flow of our programme
 ### Further reading
 * [If/else](https://www.w3schools.com/python/python_conditions.asp)
 * [Python indentation](https://www.w3schools.com/python/python_syntax.asp#python_indentation)
+* [Control flow](https://en.wikipedia.org/wiki/Control_flow)
 * [Flowcharts](https://www.bbc.co.uk/bitesize/guides/z7kkw6f/revision/3)
 
 ---
