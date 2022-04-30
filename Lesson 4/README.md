@@ -102,6 +102,8 @@ else:
 
 Typically, we only write `break` inside of an if/else, so the loop only breaks when a condition is met. Otherwise, the loop will always break when it reaches that line, making the loop redundant!
 
+As always, there are many ways to approach any problem in programming. It's possible to change the above code so it doesn't use the `break` statement at all, and relies entirely on the while condition. (Try coding it yourself!) As you become more experienced with programming, you'll be able to tell which situations demand which approach.
+
 Just as a quick aside, if you're using a password like "Password1", "12345678", or your birthday, or if you're using the same password for all your accounts, please take steps to strengthen your online security. Strong passwords needn't be complicated and difficult to remember — the one we used in our example is easily memorable ("tall lamppost at Sixth Ave") but still contains upper and lowercase letters, numbers, and symbols. If there's one thing you take away from this course, make it this. [How to choose better passwords.](https://www.popsci.com/how-to-choose-safe-passwords/)
 
 ## `continue`
@@ -127,7 +129,7 @@ while number <= 20:
 
 Just like with the `break` statement, we usually only write `continue` inside an if/else, otherwise the loop would be meaningless.
 
-## Infinite loops
+## `while True` loops
 We mentioned previously that infinite loops are usually to be avoided, because they cause our programme to never end. Sometimes, however, that's actually what we want.
 
 Remember that while loops run as long as their condition evaluates to true. We can make an infinitely running loop by simply writing `while True:`.
@@ -145,12 +147,20 @@ while True:
     running_total += added_amount
 ```
 
+At a fundamental level, most computers, control systems, and robotics are continuously running some form of infinite loop. For instance, you'd want your laptop to work the same way today as it did yesterday. The operating system on your laptop is essentially running in an infinite loop, because it's forever taking in your input (like your mouse and keyboard) and responding to it.
+
+At our level, we're not working so close to the metal (the most foundational levels of computers like CPUs and RAM). When _we_ use `while True` loops, it's typically because we want our programme to perform something indefinitely (as in the above example), or because we implement checks to exit the loop elsewhere, using `break` or `continue`. You'll explore these applications in the practice questions below.
+
 ## Let's practise
 In maths, the factorial of an integer is the product of that integer and all its preceding integers. It is denoted by the `!` mark. For example, `5! = 5 × 4 × 3 × 2 × 1 = 120`. Write a programme that takes in an integer, and calculates its factorial.
+
+[**Solution**](https://github.com/qitianshi/tyros-resources/blob/main/Lesson%204/factorials.py)
 
 ---
 
 Let's play a number guessing game. The user will think of a number between 1 and 10. A Python programme will guess the number and ask if it's right or wrong. If the guess is wrong, the programme will guess again. If the guess is right, the game will finish, and the programme will display the number of rounds it's taken to guess the number correctly.
+
+[**Solution**](https://github.com/qitianshi/tyros-resources/blob/main/Lesson%204/number_guesser.py)
 
 ---
 
@@ -174,10 +184,12 @@ Then, your programme should ask me for two numbers. It will then perform the ope
 
 Afterwards, it should show me the original menu again, so I can make as many operations as I want.
 
+[**Solution**](https://github.com/qitianshi/tyros-resources/blob/main/Lesson%204/calculator.py)
+
 ## Conclusion
 Loops are essential devices in programming that let your programme repeat a set of steps. At the most fundamental level, almost all computers are running some sort of loop. In this lesson, we learned about the while loop, a type of loop that repeats for as long as a given condition is true.
 
-In the next lesson, we'll learn about another type of loop: the for loop.
+In the next lesson, we'll learn about another type of loop: the for loop!
 
 ### Further reading
 * [Python while loops](https://www.w3schools.com/python/python_while_loops.asp)
