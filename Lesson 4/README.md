@@ -79,3 +79,14 @@ print('it finally stopped raining')
 ```
 
 ## Let's practise
+Write a while loop that allows us to print numbers in descending order. Ask for a number as an input from the user, then print, starting from the number, all the way down to zero.
+
+---
+
+I want to do math with Python! Help me make a calculator that is able to add, subtract, multiply and divide. I am able to first give my programme 2 numbers, then choose what I want to do with them. The programme should output the result and I should be able do so repeatedly until I want to exit the programme. Your programme should have a menu that looks something like this:
+
+ > 0: Quit
+ > 1: Add
+ > 2: Subtract
+ > 3: Multiply
+ > 4: Divide
