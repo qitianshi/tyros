@@ -1,0 +1,10 @@
+# Lesson 4 - While loops
+# Solution to Practice Question 1
+
+# Copyright 2022 Qi Tianshi and Tyros members. Licensed under GNU GPLv3.
+
+
+# In maths, the factorial of an integer is the product of that integer and all
+# its preceding integers. It is denoted by the `!` mark. For example,
+# `5! = 5 × 4 × 3 × 2 × 1 = 120`. Write a programme that takes in an integer,
+# and calculates its factorial.
