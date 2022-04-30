@@ -12,9 +12,9 @@ What we've covered so far:
 * [**Lesson 1**](https://github.com/qitianshi/tyros-resources/tree/main/Lesson%201): Input/output, comments, and variables
 * [**Lesson 2**](https://github.com/qitianshi/tyros-resources/tree/main/Lesson%202): Operators
 * [**Lesson 3**](https://github.com/qitianshi/tyros-resources/tree/main/Lesson%203): If/else statements
+* [**Lesson 4**](https://github.com/qitianshi/tyros-resources/tree/main/Lesson%204): `while` loops
 
 In future lessons, we'll cover:
-* **Lesson 4**: `while` loops
 * **Lesson 5**: `for` loops
 
 ## Legal

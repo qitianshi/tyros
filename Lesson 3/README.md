@@ -247,7 +247,7 @@ In Singapore, individual income taxes are calculated based on a progressive tax 
 ## Conclusion
 If/else statements allow us to control the flow of programmes by testing for specific conditions, and splitting it into multiple pathways.
 
-In the next lesson, we'll explore more ways to control the flow of our programmes!
+[In the next lesson](https://github.com/qitianshi/tyros-resources/tree/main/Lesson%204), we'll explore more ways to control the flow of our programmes!
 
 ### Further reading
 * [If/else](https://www.w3schools.com/python/python_conditions.asp)
