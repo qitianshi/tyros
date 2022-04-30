@@ -1,92 +1,171 @@
-# Lesson 4 - While Loops
+# Lesson 4 - While loops
 
 ## Introduction
-In the previous lesson, we learnt about how to use if/else statements to make our code do different things in different situations. [Here are the notes from Lesson 3 if you need a refresh.](https://github.com/qitianshi/tyros-resources/tree/main/Lesson%203)
+[In the previous lesson](https://github.com/qitianshi/tyros-resources/tree/main/Lesson%203), we learnt about how to use if/else statements to make our code respond to different conditions. That was our first foray into control flow.
 
-Everything that we have learnt so far allows us to execute specific things once! After our code finishes a particular step we tell it to execute, it moves on to the next one. But what if we need it to repeat a particular step multiple times? This is where we introduce loops!
+Another core concept in computer science is the loop. We often want computers to repeatedly do things over and over again. Think of traffic junctions that repeat the same pattern of lights, a login page where you're only allowed in after you write the correct password, or even your laptop screen refreshing 60 times a second.
 
-## The `while` statement
-Similar to its use in the English language, `while` hints to us that there needs to be a [condition](https://github.com/qitianshi/tyros-resources/tree/main/Lesson%203#conditions) in place for some things to happen.
+Simply put, a loop repeats a set of steps. For our course, we'll be looking at the two most common types of loops. In this lesson, we'll explore the while loop.
 
-I want to go to the beach! This would mean that I am (very anxiously) monitoring the weather. I see that it is raining right now, so let's set a variable `is_raining` to `True`:
+## The `while` loop
+A while loop repeats a set of instructions for as long as a [condition](https://github.com/qitianshi/tyros-resources/tree/main/Lesson%203#conditions) is true.
+
+This is what a basic while loop looks like. Just like with if/else statements, the [indentation](https://github.com/qitianshi/tyros-resources/tree/main/Lesson%203#indentation) is important.
+
+```Python
+while SOME_CONDITION:
+    print("Looped")
+```
+
+First, the condition (in this case, `SOME_CONDITION`) is checked. If it evaluates to `True`, the contents of the loop is performed once (`print("Looped")`). Afterward, it checks the condition again to see if it's still `True`, and if so, repeats the loop contents again. If at any point the condition evaluates to `False`, the loop exits. You can think of the while loop as a repeating if statement.
+
+On the game show _The Price is Right_, contestants guess the prices of various items. The winner is the one whose guess is the closest to the actual price, without going over. Let's try writing some code that continually accepts guesses, until one goes over.
+
+```Python
+actual_price = 50
+guess = 0
+
+while guess <= actual_price:
+    guess = float(input("What's your guess? "))
+
+print("You've gone over!")
+```
+
+Try running this code and typing in different guesses. You'll see that as long as the condition is true (your guess being less than the actual price), the contents of the loop repeat indefinitely, over and over again. But, the moment your guess goes over, the condition will be false, the loop will exit, and the programme moves on to `print("You've gone over!")`.
+
+Notice that we've had to _initialise_ the `guess` variable in line 2 by giving it a starting value (`0`, in this case). Try commenting out that line and see what happens. When the while loop goes to check the condition, the `guess` variable would be undefined, and we'd get an error.
+
+### While loop conditions
+Try running this.
+
+```python
+is_raining = False
+
+while is_raining:
+    print("It's raining.")
+
+print("The loop's finished.")
+```
+
+When you run the code, it's as if the while loop weren't there at all. The while loop checks the condition, realises it's `False`, and then just moves on without ever running the contents of the loop. And so, the loop never runs!
+
+Now, try changing the value of `is_raining` to `True`:
 
 ```python
 is_raining = True
 
 while is_raining:
-    print('it is still raining')
+    print("It's raining.")
+
+print("The loop's finished.")
 ```
 
-Now what happens if we run this snippet of code? The `while` loop will keep running so long as `is_raining` is `True`, so this will run forever! A key feature of the `while` loop is that so long as the condition *stays* fulfilled, the code within the loop (do you remember how to determine which lines are within the loop?) will be repeatedly executed.
+We know that while loops will run for as long as their condition is true. In this case, no part of our code ever changes the value of `is_raining`, so its value is forever `True`. We've just created an infinite loop! This while loop will run forever and never stop. Since we don't have an infinite amount of time on our hands, let's go ahead and interrupt the programme with the stop button.
 
-## Preventing infinite loops
-Now the question is, how do we stop a `while` loop? Not to worry, there are a few ways to do this!
+You would've realised by now that, in practice, it's not very meaningful to have a while loop whose condition is an unchanging `True` or `False`. Most of the time, our code will somehow modify the condition so that the loop eventually ends. In our _Price is Right_ example, this happens when the user inputs different numbers.
 
-### By modifying the conditional
-Remember that the `while` loop checks for a condition before it decides whether to repeat the code within its body. As such, so long as we are able to modify the conditional within the loop, then the `while loop will be able to terminate and we can move on to other things in life.
+Infinite loops are especially problematic. When a loop runs forever, our programme will be stuck in the loop, and never proceed to the next part. In the above example, our code will never get to `print("The loop's finished.")`. In fact, when you're using your phone and an app freezes, or a window on your laptop says "Not responding", an infinite loop might be the culprit! Somewhere under the hood, the code responsible for modifying or checking a condition is failing, and as a result, the app gets stuck in a loop that it never exits from, and you'll have to force quit the app or restart your device to forcibly exit the programme.
 
-```python
-is_raining = True
+There are, however, exceptions to this rule, [which we'll be looking at later](#infinite-loops).
 
-while is_raining:
-    print('it is still raining')
+## `break`
+Sometimes, we want our loop to exit even though the condition hasn't been met. That's where the simple `break` statement comes in.
 
-    # check if it is still raining
-    weather_check = input('is it still raining? (Y/N): ')
-    if weather_check == 'N':
-        is_raining = False
+Let's try writing a programme that checks a password. If our user enters the correct password, we'll let them in. Otherwise, as long as they enter an incorrect password, we'll get them to keep trying. However, to prevent hackers from getting into the account by brute-forcing (trying every single possible password), we'll limit the user to 5 attempts.
 
-print('it finally stopped raining')
-```
+```Python
+correct_password = "TallLamppost@6thAve"
+password_entered = input("Enter your password: ")
+number_of_attempts = 0
+logged_in_successfully = False
 
-Try running the above code! Here, by checking the condition of the weather using the `if` statement, we are able to modify the value of the conditional! This therefore allows us to control when we want to exit the loop.
+while not logged_in_successfully:
 
-This also works in situations when you are not asking for an input!
+    number_of_attempts = number_of_attempts + 1        # Alternatively, you could also write: number_of_attempts += 1
 
-```python
-tracker = 0
-
-while tracker < 5:
-    print(tracker)
-    tracker += 1
-print('tracker reached 5')
-```
-
-```
-> 0
-> 1
-> 2
-> 3
-> 4
-> tracker reached 5
-```
-
-### Using the `break` statement
-The `break` statement forces our programmme to exit the loop.
-
-```python
-is_raining = True
-
-while is_raining:
-    print('it is still raining')
-
-    # check if it is still raining
-    weather_check = input('is it still raining? (Y/N): ')
-    if weather_check == 'N':
+    if number_of_attempts > 4:                         # The number is 4 because we've already asked for the password once before the loop.
+        print("Too many attempts.")
         break
 
-print('it finally stopped raining')
+    password_entered = input("Wrong password. Try again: ")
+
+    if password_entered == correct_password:
+        logged_in_successfully = True
+
+if logged_in_successfully:
+    print("You're logged in!")
+else:
+    print("Login failed.")
+```
+
+`break` is a control flow statement. It exits the loop, regardless of whether the condition is met, and moves on to the next part of the programme.
+
+Typically, we only write `break` inside of an if/else, so the loop only breaks when a condition is met. Otherwise, the loop will always break when it reaches that line, making the loop redundant!
+
+Just as a quick aside, if you're using a password like "Password1", "12345678", or your birthday, or if you're using the same password for all your accounts, please take steps to strengthen your online security. Strong passwords needn't be complicated and difficult to remember — the one we used in our example is easily memorable ("tall lamppost at Sixth Ave") but still contains upper and lowercase letters, numbers, and symbols. If there's one thing you take away from this course, make it this. [How to choose better passwords.](https://www.popsci.com/how-to-choose-safe-passwords/)
+
+## `continue`
+`continue` is similar to `break`, but instead of exiting the loop entirely, it only skips the current iteration and moves on to the next round of the loop.
+
+Say we want to write some code that prints all numbers from 1 to 20, but skipping multiples of 3. A possible way to do it would be like this:
+
+```Python
+number = 0
+
+while number <= 20:
+
+    number = number + 1     # Alternatively: number += 1
+
+    if number % 3 == 0:
+        continue
+
+    print(number)
+
+```
+
+`continue` causes the loop to exit its current iteration, so it skips the rest of the code (in this case, the `print` function) and moves on to the next iteration.
+
+Just like with the `break` statement, we usually only write `continue` inside an if/else, otherwise the loop would be meaningless.
+
+## Infinite loops
+We mentioned previously that infinite loops are usually to be avoided, because they cause our programme to never end. Sometimes, however, that's actually what we want.
+
+Remember that while loops run as long as their condition evaluates to true. We can make an infinitely running loop by simply writing `while True:`.
+
+A shopkeeper wants a programme that helps them keep track of total revenue. It makes sense for this programme to run indefinitely, until it's switched off manually.
+
+```Python
+running_total = 0.0
+
+while True:
+
+    print("--------")
+    print("Current revenue:", running_total)
+    added_amount = float(input("Add: "))
+    running_total += added_amount
 ```
 
 ## Let's practise
-Write a while loop that allows us to print numbers in descending order. Ask for a number as an input from the user, then print, starting from the number, all the way down to zero.
+In maths, the factorial of an integer is the product of that integer and all its preceding integers. It is denoted by the `!` mark. For example, `5! = 5 × 4 × 3 × 2 × 1 = 120`. Write a programme that takes in an integer, and calculates its factorial.
 
 ---
 
-I want to do math with Python! Help me make a calculator that is able to add, subtract, multiply and divide. I am able to first give my programme 2 numbers, then choose what I want to do with them. The programme should output the result and I should be able do so repeatedly until I want to exit the programme. Your programme should have a menu that looks something like this:
+I want to do math with Python! Help me make a calculator that is able to add, subtract, multiply and divide.
 
- > 0: Quit
- > 1: Add
- > 2: Subtract
- > 3: Multiply
- > 4: Divide
+Your programme should first display a menu that looks like this:
+
+```
+0: Quit
+1: Add
+2: Subtract
+3: Multiply
+4: Divide
+
+Choose an option:
+```
+
+I will choose an option by typing its number. Your programme should include a check to make sure that the number I've typed in is a valid option. If it isn't, the programme should prompt me to try again.
+
+Then, your programme should ask me for two numbers. It will then perform the operation, and display the number.
+
+Afterwards, it should show me the original menu again, so I can make as many operations as I want.
