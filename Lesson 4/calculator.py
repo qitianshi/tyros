@@ -72,3 +72,10 @@ while True:
     print("The result is", result)
 
     input("Press enter to continue.")       # Waits for the user to press enter.
+
+
+# Like we mentioned before, there's an endless number of ways to approach
+# programming questions like this one - it's part of the fun of coding! You'll
+# have noticed that there's a lot of repetition in this code, and it's tricky
+# to add new functionality. If you're feeling adventurous, try researching on
+# functions and incorporating them into your programme to reduce repetition.
