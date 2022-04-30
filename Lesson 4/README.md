@@ -127,7 +127,7 @@ while number <= 20:
 
 Just like with the `break` statement, we usually only write `continue` inside an if/else, otherwise the loop would be meaningless.
 
-## Infinite loops
+## `while True` loops
 We mentioned previously that infinite loops are usually to be avoided, because they cause our programme to never end. Sometimes, however, that's actually what we want.
 
 Remember that while loops run as long as their condition evaluates to true. We can make an infinitely running loop by simply writing `while True:`.
@@ -144,6 +144,10 @@ while True:
     added_amount = float(input("Add: "))
     running_total += added_amount
 ```
+
+At a fundamental level, most computers, control systems, and robotics are continuously running some form of infinite loop. For instance, you'd want your laptop to work the same way today as it did yesterday. The operating system on your laptop is essentially running in an infinite loop, because it is forever taking in your input (like your mouse and keyboard) and responding to it.
+
+At our level, we're not working so close to the metal (the most fundamental levels of computers like CPUs and RAM). When we use `while True` loops, it's typically because we want our programme to perform something indefinitely (as in the above example), or because we implement checks to exit the loop elsewhere, using `break` or `continue`.
 
 ## Let's practise
 In maths, the factorial of an integer is the product of that integer and all its preceding integers. It is denoted by the `!` mark. For example, `5! = 5 × 4 × 3 × 2 × 1 = 120`. Write a programme that takes in an integer, and calculates its factorial.
