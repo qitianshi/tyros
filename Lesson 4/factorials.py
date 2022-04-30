@@ -18,3 +18,7 @@ while factorial_of >= 1:
     factorial_of -= 1
 
 print(result)
+
+
+# There are, of course, other ways to approach this question. We'll look at
+# another way next week, using the for loop.
