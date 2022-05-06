@@ -144,3 +144,93 @@ for i in range(10, 50, 5):
 ## More examples
 
 Let's go through a few more for loop examples!
+
+Let's try coding a programme that allows us to print multiples of 4 from 12 to 44 (inclusive!)
+
+```python
+for i in range(12, 48, 4):
+    print(i)
+```
+
+```
+> 12
+> 16
+> 20
+> 24
+> 28
+> 32
+> 36
+> 40
+> 44
+```
+
+Now, let's try coding a programme to accept a number from a user and calculate the sum of all numbers from 1 to that given number.
+
+```python
+total = 0
+stop = int(input("Please enter a number: "))
+
+for i in range(stop + 1):
+    total = total + i    # or we can use total += i here
+    
+ print("The sum is: " + total)
+```
+
+```
+> Please enter a number: 10
+> The sum is: 55
+```
+
+Again, do remember that since we want to include the given number, we have to add `+1` to `stop`!
+
+We can also have nested for loops, like this:
+
+```python
+for i in range(1, 6):
+    for j in range(i):
+        print(*, end = ' ')
+```
+
+```
+> *
+> * *
+> * * *
+> * * * *
+> * * * * *
+```
+
+Each time `i` gets updated, the inner for loop repeats for however many times it needs to! This means the inner loop gets repeated as well.
+
+## Let's practise
+
+Write a programme to print the following number pattern using a loop.
+
+```
+1
+1 2
+1 2 3
+1 2 3 4
+1 2 3 4 5
+```
+
+---
+
+Write a programme to print the following pattern using for loops.
+
+```
+> *
+> * *
+> * * *
+> * * * *
+> * * *
+> * *
+> *
+```
+
+**Hint:** Use two for loops for this! The first for loop is for the upper half, and the second for loop is for the lower half.
+
+## Conclusion
+
+In this lesson, we learnt about for loops, a type of loop that repeats for a specified number of times.
+
+We hope that you have enjoyed this series of lessons we have provided! Do continue to explore programming on your own, and have fun coding :)
