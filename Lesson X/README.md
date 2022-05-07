@@ -1,4 +1,4 @@
-# Lesson X - Conclusion
+# Lesson X - Where to from here?
 
 ## Introduction
 Congratulations on making it to the end!
