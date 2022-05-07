@@ -29,7 +29,7 @@ Here's a list of websites you can use to help in your learning.
 * [r/learnpython](https://www.reddit.com/r/learnpython/): A subreddit for Python Q&a for beginners.
 * [Stack Overflow](https://stackoverflow.com): A Q&A site for when you're more experienced.
 
-You might have noticed a *Further reading* section at the bottom of most of our notes. They're a great starting point to learning more about each week's lesson.
+You might have noticed a *Further reading* section at the bottom of most of our notes. They're a great starting point to learning more about each week's lesson. Additionally, if you check the solution code for each practice question, you'll also find ideas for how you can extend the question with added functionality, to make your programmes more useful.
 
 Our favourite way to learn Python (or any skill, for that matter) is through projects. It's how many of us personally got familiar with coding, because you get to experiment and problem-solve with a specific goal in mind. [Here are some projects that you can try for yourself!](https://hackr.io/blog/python-projects)
 
@@ -60,7 +60,7 @@ We wish you luck on your journey, in the hopes that some day you'll join us in t
 
 Until we meet again.
 
-With ❤️, Tianshi, En Hao, Souw Chuan, Brian, and Zenwei.
+With ❤️ — Tianshi, En Hao, Souw Chuan, Brian, and Zenwei.
 
 ---
 
