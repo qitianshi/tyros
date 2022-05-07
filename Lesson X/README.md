@@ -33,14 +33,15 @@ You might have also noticed a *Further reading* section at the bottom of most of
 
 Our favourite way to learn Python (or any skill, for that matter) is through projects. It's how many of us personally got familiar with coding, because you get to experiment and problem-solve with a specific goal in mind. [Here are some projects that you can try for yourself!](https://hackr.io/blog/python-projects)
 
-As you get even more familiar with Python, you'll be itching to expand your horizons, and become a fully-fledged software developer. As you start to spread your wings, come back here to this page once in a while for a rough roadmap of where you should go beyond Python. You'll discover that once you've learned one language, the same exact concepts carry over to any other language — you'll only take a few days to master a new language.
+As you get even more familiar with Python, you'll be itching to expand your horizons, and become a fully-fledged software developer. As you start to spread your wings, come back here to this page once in a while for a rough roadmap of where you can go beyond Python. You'll discover that once you've learned one language, the same exact concepts carry over to any other language — you'll only take a few days to master a new language.
 
 * Frontend web languages, like HTML, CSS, and JavaScript
 * Backend web languages, like PHP, Node.js, and Python
 * Version control systems, like Git
 * App development languages, like Java, Dart, and Swift
 * Robotics languages, like C, C++, and Python
-* Machine learning and AI, using tools like TensorFlow
+* Data science tools, like pandas, numpy, and MatLab
+* Machine learning tools, like TensorFlow
 
 Of course, we hope you pick up skills beyond just languages and syntax. As you become an experienced coder, these skills will help you not only write better code, but also become a better problem-solver.
 
