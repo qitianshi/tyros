@@ -55,11 +55,11 @@ for i in range(0, 10):
     guess = float(input("What's your guess? "))
 
     if guess == actual_price:
-        print("You got it!)
-        break    # terminate loop after correct guess
+        print("You got it!")
+        break    # Terminat the  loop after a correct guess
 
     elif guess < actual_price:
-        print("Too low...)
+        print("Too low...")
 
     else:
         print("Too high...")
