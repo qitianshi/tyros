@@ -69,12 +69,12 @@ print("Too many guesses.")
 
 Try running this code and type in different guesses! You'll see that if you keep getting wrong guesses, you will only get ten tries in total.
 
-`i` is conventionally used as the iterator variable. Here, `range()` provides us with a sequence of numbers between 0 (inclusive) and 5 (exclusive), but more on that later.
+`i` is conventionally used as the iterator variable. Here, `range()` provides us with a sequence of numbers between 0 (inclusive) and 5 (exclusive). More on that later.
 
 You'll also notice that the `break` keyword we learned last lesson (in the context of while loops) works with for loops too! So does `continue`.
 
 ## `range()`
-`range()` is a function that gives us a sequence of numbers. You've probably already spotted it in the for loop example, but now let's get familiar with this function.
+`range()` is a function that gives us a sequence of numbers. You've probably already spotted it in the example, but now let's get familiar with this function.
 
 ### A quick word about functions
 "Functions" might be an alien term to you, but you're actually already using them all the time!
@@ -117,6 +117,8 @@ Notice how the value of `i` changes with each round of the loop. Go back to the 
 
 We'll illustrate with a few examples.
 
+| Range | Result |
+| -- | -- |
 | `range(0, 6, 1)` | 0, 1, 2, 3, 4, 5 |
 | `range(5, 10, 1)` | 5, 6, 7, 8, 9 |
 | `range(5, 10, 2)` | 5, 7, 9 |
