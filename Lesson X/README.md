@@ -10,7 +10,7 @@ We've compiled a list of topics you should continue exploring to become a season
 ## How you can use Python in real life
 Skills are only useful if they can be applied in your everyday life. We're firm believers in the principle that theory should be taught in tandem with application.
 
-You may have noticed that many of our example code and practice questions were designed with real-world scenarios in mind, like when wrote code to calculate income taxes and interests. We hope you can take our lead from these examples and write your own programmes to solve problems in your life.
+You may have noticed that many of our example code and practice questions were designed with real-world scenarios in mind, like when wrote code to calculate income taxes and interests. We hope you can take our lead from these examples and write your own programmes to solve problems in your life. Additionally, if you check the solution code for each practice question, you'll also find ideas for how you can extend the question with added functionality, to make your programmes more useful.
 
 ## Where to go from here?
 To guide you in your quest, here's a list of search terms for Python concepts you can explore. These are all foundational ideas in computer science, and we've ranked them according to their level of complexity.
@@ -29,7 +29,7 @@ Here's a list of websites you can use to help in your learning.
 * [r/learnpython](https://www.reddit.com/r/learnpython/): A subreddit for Python Q&a for beginners.
 * [Stack Overflow](https://stackoverflow.com): A Q&A site for when you're more experienced.
 
-You might have noticed a *Further reading* section at the bottom of most of our notes. They're a great starting point to learning more about each week's lesson. Additionally, if you check the solution code for each practice question, you'll also find ideas for how you can extend the question with added functionality, to make your programmes more useful.
+You might have also noticed a *Further reading* section at the bottom of most of our notes. They're a great starting point to learning more about each week's lesson.
 
 Our favourite way to learn Python (or any skill, for that matter) is through projects. It's how many of us personally got familiar with coding, because you get to experiment and problem-solve with a specific goal in mind. [Here are some projects that you can try for yourself!](https://hackr.io/blog/python-projects)
 
