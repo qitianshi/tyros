@@ -195,3 +195,7 @@ In the next lesson, we'll learn about another type of loop: the for loop!
 * [Python while loops](https://www.w3schools.com/python/python_while_loops.asp)
 * [Control flow](https://en.wikipedia.org/wiki/Control_flow)
 * [Control systems](https://en.wikipedia.org/wiki/Control_system)
+
+---
+
+© 2022 Qi Tianshi and Tew En Hao. This file is licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International license (CC BY-NC-SA 4.0) license](https://creativecommons.org/licenses/by-nc-sa/4.0/).
