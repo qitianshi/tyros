@@ -42,7 +42,7 @@ As you get even more familiar with Python, you'll be itching to expand your hori
 * Robotics languages, like C, C++, and Python
 * Machine learning and AI, using tools like TensorFlow
 
-Of course, we hope you pick up skills beyond just languages and syntax. As you become an experienced coder, these skills will help you not only write better code, but be a better problem-solver.
+Of course, we hope you pick up skills beyond just languages and syntax. As you become an experienced coder, these skills will help you not only write better code, but also become a better problem-solver.
 
 * How to effectively Google for help
 * How to break down complex tasks
