@@ -3,79 +3,99 @@
 ## Introduction
 [In the previous lesson](https://github.com/qitianshi/tyros-resources/tree/main/Lesson%204), we learnt about how to use while loops to repeat a particular set of steps.
 
-However, while loops are not the only type of loops available at our disposal! Sometimes, we do want computers to repeatedly do things over and over again, but we want them to stop after some number of times! We are actually able to achieve this by usin what we will be looking at in today's lesson: for loops.
+As we mentioned last time, `while` is not the only type of loop at our disposal! Sometimes, we want our programme to loop over a sequence. Today we'll discover how we can do that using for loops.
 
-## The `for` loop
-If you recall from our previous lesson, a while loop repeats a set of instructions for as long as a condition is true. However, a for loop is different! A for loop repeats a set of instructions a specified number of times!
+## Iteration
+Recall from our previous lesson that a while loop repeats a set of instructions for as long as a condition is true, however many times that may be. On the other hand, a for loop repeats a set of instructions _for_ every item in a sequence. This is called iteration.
 
-This is what a basic for loop looks like. Just like with previous concepts we have learnt (like the while loop), the indentation is especially important.
+We can illustrate the concept of iteration with a simple example. Imagine you have a box of chocolates, containing many pralines, and you want to note down which ones contain nuts and which don't. You would take the first chocolate, see if it has nuts, and write down the answer. Then, you'd repeat the same set of steps for each chocolate in the box.
 
-```python
-for SOME_VARIABLE in range(START, END, STEP):
+Formally, we say that "_**for** each chocolate **in** the box, you check it for nuts_". That's where the for loop gets its name from.
+
+You are _iterating_ over each chocolate in the box, and looping the same steps for each packet. The box can be thought of as a sequence of chocolates, because it contains an ordered list of items.
+
+## For loops
+A for loop repeats a set of instructions _for_ every item in a sequence.
+
+Generally, a basic for loop looks like. Just as before, pay attention to the indentation.
+
+```Python
+for ITERATOR in SEQUENCE:
     print("Looped")
 ```
 
-A question we have to first ask ourselves is: is there a condition here? The answer is: yes! There actually is a condition. It is just presented to us as the `range` function. (More on that later...) So long as this condition is fulfilled, the contents of the loop (`print("Looped")`) will be performed. You might also notice that we introduce `SOME_VARIABLE` here. The purpose of that is because when we use the `range()` function, we actually assign a value to `SOME_VARIABLE`. Without it, our for loop would not work!
+We can draw parallels between this syntax and the chocolate analogy from earlier:
 
-Before we dive into the specifics, let us first look at an example of how the for loop is used!
+> ***for*** each chocolate ***in*** the box, you check it for nuts
 
-Do you remember the game show *The Price is Right* from last time?
+In both cases, we begin with the keyword `for`; this tells Python we're writing a for loop. `ITERATOR` is analogous to "each chocolate"; it refers to the individual item in the sequence we're currently looking at in this round of the loop. We then see another keyword, `in`; this is also essential. `SEQUENCE` would be analogous to "the box"; it refers to the sequence of items we're looking at. Finally, we see a some instructions: `print()` and "check it for nuts".
+
+To recap, `for` and `in` are keywords that identify for loops in Python. `SEQUENCE` is the sequence of items we're iterating through. `ITERATOR` is a variable that refers to the current item in `SEQUENCE` we're looking at.
+
+Before we dive into the specifics, let's first look at an example of how the for loop is used! Last week, we wrote some code using a while loop to emulate *The Price is Right*:
 
 > On the game show *The Price is Right*, contestants guess the prices of various items. The winner is the one whose guess is the closest to the actual price, without going over. Let's try writing some code that continually accepts guesses, until one goes over.
 >
 > ```
 > actual_price = 50
 > guess = 0
-> 
+>
 > while guess <= actual_price:
 >     guess = float(input("What's your guess? "))
-> 
+>
 > print("You've gone over!")
 > ```
 
-Well, one contestant figured out a loophole, and guessed 1, 2, 3... all the way until the actual price. And our poor game master could not do anything. It wasn't against the rules!
-
-Now, instead of guessing until they reach the actual price, we give them a fixed number of guesses. Let's try writinsome code that accepts guesses for a fixed number of times, say 10 times.
+Well, one contestant figured out a loophole, and guessed 1, 2, 3... all the way until the actual price. Our poor game master couldn't do anything — it wasn't against the rules! They've decided to change the rules: instead of unlimited guesses, contestants can only guess 10 times. Let's try changing our code to fit the new rules.
 
 ```python
 actual_price = 50
 
 for i in range(0, 10):
     guess = float(input("What's your guess? "))
-    
+
     if guess == actual_price:
         print("You got it!)
         break    # terminate loop after correct guess
-        
+
     elif guess < actual_price:
         print("Too low...)
-    
+
     else:
         print("Too high...")
+
+print("Too many guesses.")
 ```
 
-Try running this code and type in different guesses! You'll see that if you keep getting wrong guesses, you will only get ten tries in total. (But if you get the correct guess, then you wouldn't need the additional tries either, so you just... finish.)
+Try running this code and type in different guesses! You'll see that if you keep getting wrong guesses, you will only get ten tries in total.
 
-### `range()`
-You might have guessed that we control the number of times we repeat the for loop above using the `range()` function, and you are right! 
+`i` is conventionally used as the iterator variable. Here, `range()` provides us with a sequence of numbers between 0 (inclusive) and 5 (exclusive), but more on that later.
 
-To use the `range()` function, we do something like this:
+You'll also notice that the `break` keyword we learned last lesson (in the context of while loops) works with for loops too! So does `continue`.
 
-```python
-range(START, STOP[, STEP])
+## `range()`
+`range()` is a function that gives us a sequence of numbers. You've probably already spotted it in the for loop example, but now let's get familiar with this function.
+
+### A quick word about functions
+"Functions" might be an alien term to you, but you're actually already using them all the time!
+
+`print()` and `input()` are both examples of functions. Notice that every function has a set of brackets `()` afterward. Inside these brackets, we can write multiple parameters, separated by commas. You're probably used to seeing something like `print("My age is", age)`. This is a `print()` function in which we give two parameters: first, the string `"My age is"`; and second, the variable `age`.
+
+The exact number, order, and type of parameters passed into any function is predefined, and we must follow this syntax exactly. You might have discovered that we can't run `input("How old are you in", year)`, and expect it to print something like `How old are you in 2022`, because the `input()` function only allows a singular string as its output parameter.
+
+---
+
+Back to the `range()` function. Its purpose is to give us a sequence of numbers, between a start and end point.
+
+Depending on the number of parameters, `range()` behaves a little differently:
+
+```Python
+range(START, STOP, STEP)
+range(START, STOP)
+range(STOP)
 ```
 
-We see that the `range()` function takes in three arguments. To put it simply, we can provide it with three values. Out of the three, `START` and `STEP` are optional, whereas `STOP` is mandatory.
-
-First, `START` is the starting position of the sequence, or the number we start with. *The default value is `0` if not specified*.
-
-Next, `STOP` specifies where we stop. This tells the `range()` function to generate numbers up to this number. A key thing to note is that *the `range()` function never includes `STOP` in its result*.
-
-Lastly, `STEP` specifies the increment value, or the "step size" between consecutive numbers. Each next number in the sequence is generated by adding the value of `STEP` to the previous number. *The default value is `1` if not specified*. This also *cannot be 0*.
-
-For example, if we have `range(0, 6, 1)`, `START = 0`, `STOP = 6`, `STEP = 1`.
-
-#### Using `range()`
+`START` is the starting number (inclusive). `STOP` is the ending number (exclusive). `STEP` is the difference between adjacent numbers. If `STEP` is not provided (as in line 2), it defaults to `1`. If `START` is not provided, it defaults to `0`.
 
 Try running this code:
 
@@ -93,78 +113,22 @@ for i in range(6):
 > 5
 ```
 
-What `range()` does is it produces a sequence of integers that start from `START` and end at `STOP - 1`. From the above example, we see that `range(6)` will give us numbers from 0 to 5. However, in order to access these numbers, we have to use the for loop! The variable `i` takes on each of the numbers in our sequence, and after we output `i`, we make `i` the next value provided by `range()`.
+Notice how the value of `i` changes with each round of the loop. Go back to the earlier section if you're confused as to why.
 
-This is also the mechanism behind using the `range()` function for the for loop! Each time our variable `i` takes on a new value, the contents of the loop run once. So, our loop will run however many times our variable `i` takes on a new value, and that depends on the number of integers generated by `range()`!
+We'll illustrate with a few examples.
 
-We can also provide `range()` with both the `START` and `STOP` values:
-
-```python
-# Numbers from 10 to 15
-# start = 10
-# stop = 16
-for i in range(10, 16):
-    print(i)
-```
-
-```
-> 10
-> 11
-> 12
-> 13
-> 14
-> 15
-```
-
-Here, `STEP` is not provided, and thus it takes on the value of `1`. A key thing to note here is that if `STOP < START`, then our `range()` here would not work, because `STEP` is positive (basically, you can't keep adding to a number to make it smaller).
-
-We can also provide `STEP` too:
-
-```python
-
-# Numbers from 10 to 15
-# start = 10
-# stop = 50
-# step = 5
-for i in range(10, 50, 5):
-    print(i)
-```
-
-```
-> 10
-> 15
-> 20
-> 25
-> 30
-> 35
-> 40
-> 45
-```
+| `range(0, 6, 1)` | 0, 1, 2, 3, 4, 5 |
+| `range(5, 10, 1)` | 5, 6, 7, 8, 9 |
+| `range(5, 10, 2)` | 5, 7, 9 |
+| `range(12, 6, -1)` | 12, 11, 10, 9, 8, 7 |
+| `range(0, 6)` | 0, 1, 2, 3, 4, 5 |
+| `range(6)` | 0, 1, 2, 3, 4, 5 |
 
 ## More examples
 
-Let's go through a few more for loop examples!
+Let's go through a few more examples of for loops!
 
-Let's try coding a programme that allows us to print multiples of 4 from 12 to 44 (inclusive!)
-
-```python
-for i in range(12, 48, 4):
-    print(i)
-```
-
-```
-> 12
-> 16
-> 20
-> 24
-> 28
-> 32
-> 36
-> 40
-> 44
-```
-
-Now, let's try coding a programme to accept a number from a user and calculate the sum of all numbers from 1 to that given number.
+Let's try coding a programme to accept a number from a user and calculate the sum of all numbers from 1 to that given number.
 
 ```python
 total = 0
@@ -172,7 +136,7 @@ stop = int(input("Please enter a number: "))
 
 for i in range(stop + 1):
     total = total + i    # or we can use total += i here
-    
+
  print("The sum is: " + total)
 ```
 
@@ -181,7 +145,9 @@ for i in range(stop + 1):
 > The sum is: 55
 ```
 
-Again, do remember that since we want to include the given number, we have to add `+1` to `stop`!
+Remember that since we want to include the given number, we have to add `+1` to `stop`!
+
+---
 
 We can also have nested for loops, like this:
 
@@ -199,7 +165,7 @@ for i in range(1, 6):
 > * * * * *
 ```
 
-Each time `i` gets updated, the inner for loop repeats for however many times it needs to! This means the inner loop gets repeated as well.
+In each round of the outer for loop, the inner for loop will run in its entirety. Remember that since `i` and `j` are variables, we must have different variable names for the iterator.
 
 ## Let's practise
 
@@ -215,22 +181,28 @@ Write a programme to print the following number pattern using a loop.
 
 ---
 
-Write a programme to print the following pattern using for loops.
+Write a programme to print the following pattern using for loops. (Hint: Use two for loops for this! The first for loop is for the upper half, and the second for loop is for the lower half.)
 
 ```
-> *
-> * *
-> * * *
+>    *
+>   * *
+>  * * *
 > * * * *
-> * * *
-> * *
-> *
+>  * * *
+>   * *
+>    *
 ```
 
-**Hint:** Use two for loops for this! The first for loop is for the upper half, and the second for loop is for the lower half.
+---
+
+You're depositing some money into a savings account, for which you earn 0.1% interest per annum. Write a programme that takes in the original amount deposited, and prints out the total amount of money in the account for each of the next 10 years.
 
 ## Conclusion
-
 In this lesson, we learnt about for loops, a type of loop that repeats for a specified number of times.
 
-We hope that you have enjoyed this series of lessons we have provided! Do continue to explore programming on your own, and have fun coding :)
+### Further reading
+We've only touched on the absolute most basic type of for loop (`for i in range()`), but Python for loops are actually much more capable! `range()` isn't the only type of sequence you can iterate over. Check out these resources for more:
+
+* [For loops](https://www.w3schools.com/python/python_for_loops.asp)
+* [Lists](https://www.w3schools.com/python/python_lists.asp)
+* [Functions](https://www.w3schools.com/python/python_functions.asp)
