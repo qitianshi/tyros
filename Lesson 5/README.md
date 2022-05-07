@@ -186,13 +186,13 @@ Write a programme to print the following number pattern using a loop.
 Write a programme to print the following pattern using for loops. (Hint: Use two for loops for this! The first for loop is for the upper half, and the second for loop is for the lower half.)
 
 ```
->    *
->   * *
->  * * *
-> * * * *
->  * * *
->   * *
->    *
+   *
+  * *
+ * * *
+* * * *
+ * * *
+  * *
+   *
 ```
 
 ---
