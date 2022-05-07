@@ -11,4 +11,7 @@ In our course, we have taught you only the very basics of Python. In fact, there
 Still, one of the best ways to learn Python is through projects. In this way, you get to experiment with how Python works with a specific goal in mind. [Here are some projects that you can try for yourself](https://hackr.io/blog/python-projects)!
 
 ## How about applying Python...
-In our course, we touched on 
+Python has far reaching applications in our daily lives! We can use it in web development (things to do with websites), data science, or even in Artificial Intelligence! [Here iS Geek for Geeks' Top 10 applications of Python.](https://www.geeksforgeeks.org/top-10-python-applications-in-real-world/)
+
+## Conclusion
+As short as this final lesson is, we hope that you will continue to explore programmming on your own! Thank you so much for staying with us through the duration of this course.
