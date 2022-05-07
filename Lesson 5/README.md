@@ -139,7 +139,7 @@ stop = int(input("Please enter a number: "))
 for i in range(stop + 1):
     total = total + i    # or we can use total += i here
 
- print("The sum is: " + total)
+print("The sum is: " + str(total))
 ```
 
 ```
