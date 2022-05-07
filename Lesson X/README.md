@@ -58,9 +58,7 @@ The world of computer science is filled with intrigue, amazement, and frustratio
 
 We wish you luck on your journey, in the hopes that some day you'll join us in this community of coders, developers, tinkerers, artists, and problem-solvers.
 
-Until we meet again.
-
-With ❤️ — Tianshi, En Hao, Souw Chuan, Brian, and Zenwei.
+Until we meet again, with ❤️ — Tianshi, En Hao, Souw Chuan, Brian, and Zenwei.
 
 ---
 
