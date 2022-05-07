@@ -181,6 +181,8 @@ Write a programme to print the following number pattern using a loop.
 1 2 3 4 5
 ```
 
+[**Solution**](https://github.com/qitianshi/tyros-resources/blob/main/Lesson%205/number_triangle.py)
+
 ---
 
 Write a programme to print the following pattern using for loops. (Hint: Use two for loops for this! The first for loop is for the upper half, and the second for loop is for the lower half.)
@@ -195,9 +197,13 @@ Write a programme to print the following pattern using for loops. (Hint: Use two
 >    *
 ```
 
+[**Solution**](https://github.com/qitianshi/tyros-resources/blob/main/Lesson%205/diamond.py)
+
 ---
 
 You're depositing some money into a savings account, for which you earn 0.1% interest per annum. Write a programme that takes in the original amount deposited, and prints out the total amount of money in the account for each of the next 10 years.
+
+[**Solution**](https://github.com/qitianshi/tyros-resources/blob/main/Lesson%205/compound_interest.py)
 
 ## Conclusion
 In this lesson, we learnt about for loops, a type of loop that repeats for a specified number of times.
