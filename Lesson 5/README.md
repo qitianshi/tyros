@@ -202,6 +202,8 @@ You're depositing some money into a savings account, for which you earn 0.1% int
 ## Conclusion
 In this lesson, we learnt about for loops, a type of loop that repeats for a specified number of times.
 
+This is the last lesson for this iteration of our project. Read [our final lesson notes](https://github.com/qitianshi/tyros-resources/tree/main/Lesson%20X) to see how you can continue your learning journey, how you can apply Python in your everyday life, and our sign-off.
+
 ### Further reading
 We've only touched on the absolute most basic type of for loop (`for i in range()`), but Python for loops are actually much more capable! `range()` isn't the only type of sequence you can iterate over. Check out these resources for more:
 
