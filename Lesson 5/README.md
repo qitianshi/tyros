@@ -208,3 +208,7 @@ We've only touched on the absolute most basic type of for loop (`for i in range(
 * [For loops](https://www.w3schools.com/python/python_for_loops.asp)
 * [Lists](https://www.w3schools.com/python/python_lists.asp)
 * [Functions](https://www.w3schools.com/python/python_functions.asp)
+
+---
+
+© 2022 Qi Tianshi and Tew En Hao. This file is licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International license (CC BY-NC-SA 4.0) license](https://creativecommons.org/licenses/by-nc-sa/4.0/).
